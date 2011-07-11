@@ -1,0 +1,74 @@
+# Typus Models Configuration File
+#
+# Use the README file as a reference to customize settings.
+
+Article:
+  fields:
+    default: title, body
+    form: title, body
+  order_by: 
+  relationships: link_tags, tags
+  filters: created_at
+  search: title
+  application: niksan2
+
+LinkTag:
+  fields:
+    default: tag_id, tagged_id, tag
+    form: tag_id, tagged_id, tag
+  order_by: 
+  relationships: tag
+  filters: created_at
+  search: 
+  application: niksan2
+
+Portfolio:
+  fields:
+    default: name, description, image_file_name
+    form: name, description, image_file_name
+  order_by: 
+  relationships: portfolio_sites, sites
+  filters: created_at
+  search: name
+  application: niksan2
+
+PortfolioSite:
+  fields:
+    default: portfolio_id, site_id, site, portfolio
+    form: portfolio_id, site_id, site, portfolio
+  order_by: 
+  relationships: portfolio, site
+  filters: created_at
+  search: 
+  application: niksan2
+
+Post:
+  fields:
+    default: title, short, body
+    form: title, short, body
+  order_by: 
+  relationships: link_tags, tags
+  filters: created_at
+  search: title
+  application: niksan2
+
+Site:
+  fields:
+    default: name, description, url, image_file_name
+    form: name, description, url, image_file_name
+  order_by: 
+  relationships: portfolio_sites, portfolios
+  filters: created_at
+  search: name
+  application: niksan2
+
+Tag:
+  fields:
+    default: name
+    form: name
+  order_by: 
+  relationships: articles, link_tags, posts
+  filters: created_at
+  search: name
+  application: niksan2
+

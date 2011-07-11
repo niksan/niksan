@@ -1,0 +1,18 @@
+#header_wrap
+  #header
+    %a{ :href => '/' }
+      %img#logo{ :src => '/images/header/logo.png', :alt => 'NikSan' }
+    %img#website_development{ :src => '/images/header/website_development.png', :alt => 'website development' }
+    %ul#main_menu
+      %li<
+        - id = ( controller_name == 'main' ) ? 'act_button' : nil
+        = link_to 'Главная', root_path, :id => id
+        - id = ( controller_name == 'portfolio' ) ? 'act_button' : nil
+        = link_to 'Портфолио', root_path, :id => id
+        - id = ( controller_name == 'price' ) ? 'act_button' : nil
+        = link_to 'Цены', root_path, :id => id
+        - id = ( controller_name == 'contacts' ) ? 'act_button' : nil
+        = link_to 'Контакты', root_path, :id => id
+        - id = ( controller_name == 'blog' ) ? 'act_button' : nil
+        = link_to 'Блог', root_path, :id => id
+  .bottom_line

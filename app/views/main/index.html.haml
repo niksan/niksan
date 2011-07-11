@@ -1,0 +1,19 @@
+.box1
+  #buttons_menu
+    .wrapper
+      .button
+        %img{ :src => '/pictures/site_create.png', :alt => 'Разработка сайта' }
+        = link_to 'Разработка сайтов', article_path(2)
+    .wrapper
+      .button
+        %img{ :src => '/pictures/site_pr.png', :alt => 'Разработка сайта' }
+        = link_to 'Продвижение сайтов', article_path(3)
+    .wrapper
+      .button
+        %img{ :src => '/pictures/site_support.png', :alt => 'Разработка сайта' }
+        = link_to 'Поддержка сайтов', article_path(4)
+  .clear
+.box2
+  %h1<
+    = @article.title
+  = raw(@article.body)

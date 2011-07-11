@@ -1,0 +1,36 @@
+/* line 4, ../../app/stylesheets/main.scss */
+#buttons_menu .wrapper {
+  float: left;
+  width: 33.33%;
+}
+/* line 7, ../../app/stylesheets/main.scss */
+#buttons_menu .wrapper .button {
+  cursor: pointer;
+  margin: 10px;
+  text-align: center;
+  border: solid 2px #f4faf0;
+}
+/* line 12, ../../app/stylesheets/main.scss */
+#buttons_menu .wrapper .button img {
+  display: block;
+  margin: 10px auto 10px auto;
+}
+/* line 16, ../../app/stylesheets/main.scss */
+#buttons_menu .wrapper .button a {
+  color: #333;
+  display: block;
+  margin: 0px 0px 20px 0px;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* line 24, ../../app/stylesheets/main.scss */
+#buttons_menu .wrapper .button.active {
+  background: #e5f8d9;
+  border: solid 2px #fff;
+  -webkit-border-radius: 10px 10px;
+  -moz-border-radius: 10px / 10px;
+  -o-border-radius: 10px / 10px;
+  -ms-border-radius: 10px / 10px;
+  -khtml-border-radius: 10px / 10px;
+  border-radius: 10px / 10px;
+}

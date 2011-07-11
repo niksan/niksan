@@ -1,0 +1,660 @@
+/* line 17, ../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 115, ../../../../.rvm/gems/ruby-1.8.7-p302/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 3, ../../app/stylesheets/screen (копия).scss */
+html {
+  padding-left: 1000px;
+}
+
+/* line 4, ../../app/stylesheets/screen (копия).scss */
+html body {
+  zoom: 1;
+  height: 100%;
+}
+
+/* line 5, ../../app/stylesheets/screen (копия).scss */
+#wrap {
+  min-width: 1000px;
+  margin-left: -1000px;
+  zoom: 1;
+  position: relative;
+}
+
+/* line 6, ../../app/stylesheets/screen (копия).scss */
+#header {
+  height: 300px;
+  background: #1b5aad;
+  text-align: center;
+}
+
+/* line 7, ../../app/stylesheets/screen (копия).scss */
+#header_block_wrap {
+  width: 1000px;
+  margin: 0px auto 0px auto;
+}
+
+/* line 8, ../../app/stylesheets/screen (копия).scss */
+#close_button {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../images/close_button.gif) no-repeat;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* line 9, ../../app/stylesheets/screen (копия).scss */
+#close_button:hover {
+  background: url(../images/close_button_act.gif) no-repeat;
+}
+
+/* line 10, ../../app/stylesheets/screen (копия).scss */
+#button_up {
+  width: 64px;
+  height: 12px;
+  background: url(../images/button_up.gif) no-repeat;
+  position: absolute;
+  display: none;
+  float: left;
+  cursor: pointer;
+  margin: -19px 0px 0px -45px;
+}
+
+/* line 11, ../../app/stylesheets/screen (копия).scss */
+#technologies {
+  width: 183px;
+  height: 300px;
+  float: left;
+  background: url(../images/technologies.jpg) no-repeat;
+  margin: 0px 100px 0px 50px;
+}
+
+/* line 12, ../../app/stylesheets/screen (копия).scss */
+#header_info {
+  height: 300px;
+  float: left;
+  width: 475px;
+  background: url(../images/top_gradient.png) no-repeat left;
+  color: #fff;
+  padding: 0px 0px 0px 135px;
+  text-align: left;
+}
+
+/* line 13, ../../app/stylesheets/screen (копия).scss */
+#header_info h2 {
+  font-size: 30px;
+  font-weight: normal;
+  padding: 0;
+  margin: 40px 0px 25px 0px;
+}
+
+/* line 14, ../../app/stylesheets/screen (копия).scss */
+#order_site {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  width: 182px;
+  height: 40px;
+  padding: 10px 0px 0px 18px;
+  background: url(../images/button_bg.png) no-repeat;
+  float: left;
+}
+
+/* line 15, ../../app/stylesheets/screen (копия).scss */
+#info_block {
+  margin: 0px 0px 0px 233px;
+  width: 210px;
+  font-size: 14px;
+  color: #87bbff;
+}
+
+/* line 16, ../../app/stylesheets/screen (копия).scss */
+#info_block a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 0px 0px 5px 0px;
+}
+
+/* line 17, ../../app/stylesheets/screen (копия).scss */
+#info_block a.site_create {
+  display: block;
+}
+
+/* line 18, ../../app/stylesheets/screen (копия).scss */
+#phone_number {
+  color: #fff;
+  font-size: 24px;
+  margin: 60px 0px 0px 85px;
+}
+
+/* line 19, ../../app/stylesheets/screen (копия).scss */
+#header_line {
+  height: 78px;
+  background: black url(../images/header_line_bg.png) repeat-x bottom;
+  text-align: left;
+  width: 100%;
+  position: fixed;
+}
+
+/* line 20, ../../app/stylesheets/screen (копия).scss */
+#logo {
+  display: block;
+  padding: 15px 0px 0px 20px;
+  float: left;
+}
+
+/* line 21, ../../app/stylesheets/screen (копия).scss */
+#website_development {
+  display: block;
+  width: 97px;
+  height: 36px;
+  float: left;
+  margin: 15px 0px 0px 15px;
+}
+
+/* line 22, ../../app/stylesheets/screen (копия).scss */
+#main_menu {
+  float: left;
+  margin: 20px 0px 0px 40px;
+}
+
+/* line 23, ../../app/stylesheets/screen (копия).scss */
+#main_menu ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 24, ../../app/stylesheets/screen (копия).scss */
+#main_menu ul li {
+  display: block;
+  float: left;
+}
+
+/* line 25, ../../app/stylesheets/screen (копия).scss */
+#main_menu ul li a {
+  display: block;
+  text-align: center;
+  width: 113px;
+  height: 40px;
+  background: none;
+  float: left;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 0px 0px 0px;
+  text-shadow: 0px 1px 0px #000;
+}
+
+/* line 26, ../../app/stylesheets/screen (копия).scss */
+#main_menu ul li a:hover, #main_menu ul li a.active {
+  color: #fff;
+  background: url(../images/main_button_bg.gif) no-repeat;
+}
+
+/* line 27, ../../app/stylesheets/screen (копия).scss */
+#authorize {
+  float: right;
+  width: 145px;
+  height: 40px;
+  padding: 19px 10px 0px 0px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+  color: #fff;
+}
+
+/* line 28, ../../app/stylesheets/screen (копия).scss */
+#authorize a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* line 29, ../../app/stylesheets/screen (копия).scss */
+#authorize a.we_know {
+  color: #b5b5b5;
+  text-decoration: none;
+  display: block;
+}
+
+/* line 30, ../../app/stylesheets/screen (копия).scss */
+#content {
+  padding: 10px 0px 10px 20px;
+  margin-left: -358px;
+  width: 100%;
+  text-align: left;
+  color: #000;
+  float: left;
+  line-height: 110%;
+}
+
+/* line 31, ../../app/stylesheets/screen (копия).scss */
+#content div.box1 {
+  padding: 0;
+  margin: 0px 0px 10px 350px;
+}
+
+/* line 32, ../../app/stylesheets/screen (копия).scss */
+#content div.box1 div.sperator_h30 {
+  width: 15px;
+  float: left;
+}
+
+/* line 33, ../../app/stylesheets/screen (копия).scss */
+#content div.box1 div.top {
+  background: #f4faf0 url(../images/box1/px.gif) repeat-x top;
+  height: 6px;
+}
+
+/* line 34, ../../app/stylesheets/screen (копия).scss */
+#content div.box1 div.top img.left {
+  display: block;
+  float: left;
+}
+
+/* line 35, ../../app/stylesheets/screen (копия).scss */
+#content div.box1 div.top img.right {
+  display: block;
+  float: right;
+}
+
+/* line 36, ../../app/stylesheets/screen (копия).scss */
+#content div.box1 div.middle {
+  background: #f4faf0 url(../images/box1/px.gif) repeat-y right;
+  border-left: solid 1px #d0d0d0;
+  padding: 10px;
+  text-align: center;
+  height: 200px;
+}
+
+/* line 37, ../../app/stylesheets/screen (копия).scss */
+#content div.box1 div.bottom {
+  background: #f4faf0 url(../images/box1/px.gif) repeat-x bottom;
+  height: 6px;
+}
+
+/* line 38, ../../app/stylesheets/screen (копия).scss */
+#content div.box1 div.bottom img.left {
+  display: block;
+  float: left;
+}
+
+/* line 39, ../../app/stylesheets/screen (копия).scss */
+#content div.box1 div.bottom img.right {
+  display: block;
+  float: right;
+}
+
+/* line 40, ../../app/stylesheets/screen (копия).scss */
+#services div.service {
+  width: 33.2%;
+  height: 190px;
+  float: left;
+  cursor: pointer;
+  padding: 10px 0px 0px 0px;
+}
+
+/* line 41, ../../app/stylesheets/screen (копия).scss */
+#services div.active {
+  background: url(../images/service_bg.gif) no-repeat center;
+}
+
+/* line 42, ../../app/stylesheets/screen (копия).scss */
+#services div.service a {
+  color: #000;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  margin: 25px auto 0px auto;
+}
+
+/* line 43, ../../app/stylesheets/screen (копия).scss */
+#content div.box2 {
+  padding: 0px;
+  margin: 0px 0px 10px 350px;
+}
+
+/* line 44, ../../app/stylesheets/screen (копия).scss */
+#content div.box2 h1 {
+  padding: 0px;
+  margin: 0px 0px 20px 0px;
+  font-size: 24px;
+  color: #222;
+}
+
+/* line 45, ../../app/stylesheets/screen (копия).scss */
+#content div.box2 h1 a {
+  text-decoration: none;
+}
+
+/* line 46, ../../app/stylesheets/screen (копия).scss */
+#content div.box2 a {
+  color: #1d3e6b;
+  text-decoration: underline;
+}
+
+/* line 48, ../../app/stylesheets/screen (копия).scss */
+#content div.box2 div.top {
+  background: white url(../images/box2/px.gif) repeat-x top;
+  height: 7px;
+}
+
+/* line 49, ../../app/stylesheets/screen (копия).scss */
+#content div.box2 div.top img.left {
+  display: block;
+  float: left;
+}
+
+/* line 50, ../../app/stylesheets/screen (копия).scss */
+#content div.box2 div.top img.right {
+  display: block;
+  float: right;
+}
+
+/* line 51, ../../app/stylesheets/screen (копия).scss */
+#content div.box2 div.middle {
+  background: white url(../images/box2/px.gif) repeat-y right;
+  border-left: solid 1px #d0d0d0;
+  padding: 10px;
+}
+
+/* line 52, ../../app/stylesheets/screen (копия).scss */
+#content div.box2 div.middle div.site {
+  margin: 0px 0px 10px 0px;
+  padding: 10px;
+}
+
+/* line 53, ../../app/stylesheets/screen (копия).scss */
+#content div.box2 div.middle div.site div.additional {
+  border: solid 1px #ccc;
+  margin: 10px 0px 0px 0px;
+  border-radius: 5px;
+  padding: 5px;
+  background: #bcd7fd;
+  font-size: 12px;
+}
+
+/* line 54, ../../app/stylesheets/screen (копия).scss */
+#content div.box2 div.middle div.site img {
+  float: left;
+  display: block;
+}
+
+/* line 55, ../../app/stylesheets/screen (копия).scss */
+#content div.box2 div.middle div.site div.short {
+  padding: 0px 0px 0px 240px;
+  border: solid 1px #fff;
+}
+
+/* line 56, ../../app/stylesheets/screen (копия).scss */
+#content div.box2 div.middle div.site div.short p {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 57, ../../app/stylesheets/screen (копия).scss */
+#content div.box2 div.bottom {
+  background: white url(../images/box2/px.gif) repeat-x bottom;
+  height: 7px;
+}
+
+/* line 58, ../../app/stylesheets/screen (копия).scss */
+#content div.box2 div.bottom img.left {
+  display: block;
+  float: left;
+}
+
+/* line 59, ../../app/stylesheets/screen (копия).scss */
+#content div.box2 div.bottom img.right {
+  display: block;
+  float: right;
+}
+
+/* line 60, ../../app/stylesheets/screen (копия).scss */
+#sidebar {
+  width: 326px;
+  padding: 10px 0px 0px 7px;
+  float: right;
+  margin: 0px;
+  text-align: left;
+}
+
+/* line 61, ../../app/stylesheets/screen (копия).scss */
+#sidebar div.box3 {
+  margin: 0px 15px 10px 0px;
+}
+
+/* line 62, ../../app/stylesheets/screen (копия).scss */
+#sidebar div.box3 div.top {
+  background: #e8e8e8 url(../images/box1/px.gif) repeat-x top;
+  height: 6px;
+}
+
+/* line 63, ../../app/stylesheets/screen (копия).scss */
+#sidebar div.box3 div.top img.left {
+  display: block;
+  float: left;
+}
+
+/* line 64, ../../app/stylesheets/screen (копия).scss */
+#sidebar div.box3 div.top img.right {
+  display: block;
+  float: right;
+}
+
+/* line 65, ../../app/stylesheets/screen (копия).scss */
+#sidebar div.box3 div.middle {
+  background: #e8e8e8 url(../images/box1/px.gif) repeat-y right;
+  border-left: solid 1px #d0d0d0;
+  padding: 20px 20px 0px 20px;
+  margin: 0px 0px 0px 0px;
+}
+
+/* line 66, ../../app/stylesheets/screen (копия).scss */
+#sidebar div.box3 div.bottom {
+  background: #e8e8e8 url(../images/box1/px.gif) repeat-x bottom;
+  height: 6px;
+  margin: 0px 0px 0px 0px;
+}
+
+/* line 67, ../../app/stylesheets/screen (копия).scss */
+#sidebar div.box3 div.bottom img.left {
+  display: block;
+  float: left;
+}
+
+/* line 68, ../../app/stylesheets/screen (копия).scss */
+#sidebar div.box3 div.bottom img.right {
+  display: block;
+  float: right;
+}
+
+/* line 69, ../../app/stylesheets/screen (копия).scss */
+#sidebar div.box3 div.sperator_v30 {
+  height: 30px;
+}
+
+/* line 70, ../../app/stylesheets/screen (копия).scss */
+#sidebar div.box3 div.sperator_v10 {
+  height: 10px;
+}
+
+/* line 71, ../../app/stylesheets/screen (копия).scss */
+#sidebar div.box3 strong {
+  color: #6d6d6d;
+  font-size: 22px;
+  font-weight: normal;
+  display: block;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 20px 20px;
+}
+
+/* line 72, ../../app/stylesheets/screen (копия).scss */
+#sidebar div.box3 div.site {
+  background: #f4f4f4;
+  padding: 10px;
+  margin: 0px 0px 0px 10px;
+  width: 225px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 73, ../../app/stylesheets/screen (копия).scss */
+#sidebar div.box3 div.site img {
+  display: block;
+  margin: 0px 0px 7px 0px;
+}
+
+/* line 74, ../../app/stylesheets/screen (копия).scss */
+#sidebar div.box3 div.site a {
+  color: #1e6db5;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+/* line 75, ../../app/stylesheets/screen (копия).scss */
+#to_portfolio {
+  display: block;
+  margin: 10px 0px 0px 65px;
+  font-size: 14px;
+  color: #6d6d6d;
+  text-decoration: none;
+}
+
+/* line 76, ../../app/stylesheets/screen (копия).scss */
+#to_portfolio:hover {
+  text-decoration: underline;
+}
+
+/* line 77, ../../app/stylesheets/screen (копия).scss */
+#sidebar div.box3 div.post {
+  background: #f4f4f4;
+  padding: 10px;
+  margin: 0px 0px 0px 10px;
+  width: 225px;
+  padding: 12px;
+  text-align: center;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+/* line 78, ../../app/stylesheets/screen (копия).scss */
+#sidebar div.box3 div.post span.date {
+  color: #1e6db5;
+  font-size: 10px;
+  display: block;
+  float: left;
+}
+
+/* line 79, ../../app/stylesheets/screen (копия).scss */
+#sidebar div.box3 div.post div.summary {
+  color: #6d6d6d;
+  float: right;
+  width: 160px;
+  text-align: justify;
+}
+
+/* line 80, ../../app/stylesheets/screen (копия).scss */
+#sidebar div.box3 div.post div.summary strong {
+  font-size: 11px;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+}
+
+/* line 81, ../../app/stylesheets/screen (копия).scss */
+#sidebar div.box3 div.post div.summary a {
+  color: #6d6d6d;
+  text-decoration: none;
+}
+
+/* line 82, ../../app/stylesheets/screen (копия).scss */
+.clear {
+  height: 0px;
+  clear: both;
+  font-size: 1px;
+}
+
+/* line 83, ../../app/stylesheets/screen (копия).scss */
+#footer {
+  height: 100px;
+  background: #e7f3f6;
+  margin: 20px 0px 0px 0px;
+}
+
+/* line 84, ../../app/stylesheets/screen (копия).scss */
+#rate {
+  float: left;
+  margin: 55px 0px 0px 10px;
+  text-align: left;
+  width: 200px;
+}
