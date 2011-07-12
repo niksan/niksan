@@ -1,4 +1,12 @@
 .box3
   %span.header<
     Последнее в блоге:
+  #last_in_blog
+    - @last_posts.each do |post|
+      .post
+        = link_to post.title, blog_path(post)
+        %p<
+          = post.short
+        %span.date<
+          = l post.date, :format => :short_date
 .clear

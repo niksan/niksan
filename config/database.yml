@@ -12,7 +12,7 @@ development:
   adapter: postgresql
   encoding: utf8
   reconnect: false
-  database: niksan_new
+  database: niksan2
   pool: 5
   username: niksan
   password: 860827
@@ -46,8 +46,10 @@ test:
 
 production:
   adapter: postgresql
-  encoding: unicode
-  database: niksan2_production
+  encoding: utf8
+  reconnect: false
+  database: niksan2
   pool: 5
-  username: niksan2
-  password:
+  username: niksan
+  password: 860827
+  socket: /var/run/mysqld/mysqld.sock

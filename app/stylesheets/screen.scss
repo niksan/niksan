@@ -83,13 +83,13 @@ a{
     ul{
       margin: 15px 0px 5px 0px;
       li{
-        list-style-type: circle;
+        list-style-type: disc;
         margin: 0px 0px 0px 20px;
       }
     }
     .box1{
       min-height: 200px;
-      margin: 0px 0px 0px 370px;
+      margin: 0px 0px 10px 370px;
       border: solid 1px #d0d0d0;
       @include border-radius(6px, 6px);
       padding: 10px 10px 10px 10px;
@@ -101,7 +101,7 @@ a{
       @include border-radius(6px, 6px);
       padding: 10px 10px 10px 10px;
       background: #fff;
-      margin: 10px 0px 0px 370px;
+      margin: 0px 0px 0px 370px;
       color: #222;
       font-size: 0.9em;
       p{
@@ -121,6 +121,24 @@ a{
         font-family: 'Times new roman';
         border-bottom: dotted 1px;
       }
+      span.date{
+        font-style: italic;
+        font-size: 0.8em;
+      }
+    }
+    #tags{
+      margin: 15px 0px 10px 0px;
+      a.tag{
+        padding: 0px 0px 0px 19px;
+        margin: 0px 10px 0px 0px;
+        background: url('/images/icons/tag.gif') no-repeat top left;
+        font-size: 0.9em;
+        line-height: 16px;
+        color: #555;
+        &:hover{
+          color: #ff6666;
+        }
+      }
     }
   }
   #sidebar{
@@ -137,13 +155,57 @@ a{
       padding: 20px 20px 20px 20px;
       span.header{
         display: block;
-        margin: 0px 0px 0px 20px;
+        margin: 0px 0px 15px 20px;
         color: #6D6D6D;
         font-size: 22px;
       }
       .contacts{
         font-size:18px;
         line-height:24px;
+      }
+      #new_sites{
+        .site{
+          background: #f4f4f4;
+          margin: 10px 0px 0px 0px;
+          padding:10px;
+          text-align: center;
+          cursor: pointer;
+          a{
+            font-size: 0.9em;
+            display: block;
+            margin: 5px 0px 0px 0px;
+            color: #1e6db5;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }  
+      }
+      #last_in_blog{
+        .post{
+          color: #6d6d6d;
+          background: #f4f4f4;
+          margin: 10px 0px 0px 0px;
+          padding:10px;
+          text-align: justify;
+          cursor: pointer;
+          font-size: 0.7em;
+          span.date{
+            color: #1e6db5;
+            font-size: 0.8em;
+          }
+          a{
+            display: block;
+            margin: 0px 0px 0px 0px;
+            text-decoration: underline;
+            font-weight: bold;
+            color: #6d6d6d;
+            font-size: 1.2em;
+          }
+          p{
+            margin: 5px 0px 5px 0px
+          }
+        }
       }
     }
   }

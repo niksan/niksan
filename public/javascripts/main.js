@@ -7,9 +7,6 @@ $(document).ready(function(){
       $(this).removeClass('active')
     }
   );
-  $('#buttons_menu .button').click(
-    function(){
-      window.location=$(this).find("a").attr("href"); return false;
-    }
-  );
+  $('#buttons_menu .button').click( function(){ window.location=$(this).find("a").attr("href"); return false; } );
+  $('#last_in_blog .post').click( function(){ window.location=$(this).find("a").attr("href"); return false; } );
 });

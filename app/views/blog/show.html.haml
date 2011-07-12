@@ -1,0 +1,6 @@
+%h1
+  = @post.title
+%span.date
+  = l @post.date, :format => :short_date
+= raw(@post.body)
+= render 'shared/tags'

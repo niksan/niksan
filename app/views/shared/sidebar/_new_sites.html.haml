@@ -1,4 +1,9 @@
 .box3
   %span.header<
     Новые сайты:
+  #new_sites
+    - @new_sites.each do |site|
+      %div.site
+        = image_tag site.image.url(:thumb)
+        = link_to site.name, '/'
 .clear

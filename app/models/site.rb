@@ -5,5 +5,5 @@ class Site < ActiveRecord::Base
   validates :name, :presence => true
   validates :url, :presence => true
   
-  has_attached_file :image, :styles => { :medium => "800x600>", :thumb => "225x400>" }
+  has_attached_file :image, :styles => { :medium => "800x600>", :thumb => "280x300>" }
 end

@@ -170,13 +170,13 @@ a:hover {
 }
 /* line 85, ../../app/stylesheets/screen.scss */
 #wrapper #content ul li {
-  list-style-type: circle;
+  list-style-type: disc;
   margin: 0px 0px 0px 20px;
 }
 /* line 90, ../../app/stylesheets/screen.scss */
 #wrapper #content .box1 {
   min-height: 200px;
-  margin: 0px 0px 0px 370px;
+  margin: 0px 0px 10px 370px;
   border: solid 1px #d0d0d0;
   -webkit-border-radius: 6px 6px;
   -moz-border-radius: 6px / 6px;
@@ -199,7 +199,7 @@ a:hover {
   border-radius: 6px / 6px;
   padding: 10px 10px 10px 10px;
   background: #fff;
-  margin: 10px 0px 0px 370px;
+  margin: 0px 0px 0px 370px;
   color: #222;
   font-size: 0.9em;
 }
@@ -223,13 +223,35 @@ a:hover {
   font-family: 'Times new roman';
   border-bottom: dotted 1px;
 }
-/* line 126, ../../app/stylesheets/screen.scss */
+/* line 124, ../../app/stylesheets/screen.scss */
+#wrapper #content .box2 span.date {
+  font-style: italic;
+  font-size: 0.8em;
+}
+/* line 129, ../../app/stylesheets/screen.scss */
+#wrapper #content #tags {
+  margin: 15px 0px 10px 0px;
+}
+/* line 131, ../../app/stylesheets/screen.scss */
+#wrapper #content #tags a.tag {
+  padding: 0px 0px 0px 19px;
+  margin: 0px 10px 0px 0px;
+  background: url("/images/icons/tag.gif") no-repeat top left;
+  font-size: 0.9em;
+  line-height: 16px;
+  color: #555;
+}
+/* line 138, ../../app/stylesheets/screen.scss */
+#wrapper #content #tags a.tag:hover {
+  color: #ff6666;
+}
+/* line 144, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar {
   float: right;
   width: 340px;
   margin: 0px 10px 0px 0px;
 }
-/* line 130, ../../app/stylesheets/screen.scss */
+/* line 148, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 {
   border: solid 1px #d0d0d0;
   -webkit-border-radius: 6px 6px;
@@ -244,20 +266,67 @@ a:hover {
   margin: 0px 0px 10px 0px;
   padding: 20px 20px 20px 20px;
 }
-/* line 138, ../../app/stylesheets/screen.scss */
+/* line 156, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 span.header {
   display: block;
-  margin: 0px 0px 0px 20px;
+  margin: 0px 0px 15px 20px;
   color: #6D6D6D;
   font-size: 22px;
 }
-/* line 144, ../../app/stylesheets/screen.scss */
+/* line 162, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 .contacts {
   font-size: 18px;
   line-height: 24px;
 }
+/* line 167, ../../app/stylesheets/screen.scss */
+#wrapper #sidebar .box3 #new_sites .site {
+  background: #f4f4f4;
+  margin: 10px 0px 0px 0px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 173, ../../app/stylesheets/screen.scss */
+#wrapper #sidebar .box3 #new_sites .site a {
+  font-size: 0.9em;
+  display: block;
+  margin: 5px 0px 0px 0px;
+  color: #1e6db5;
+}
+/* line 178, ../../app/stylesheets/screen.scss */
+#wrapper #sidebar .box3 #new_sites .site a:hover {
+  text-decoration: underline;
+}
+/* line 185, ../../app/stylesheets/screen.scss */
+#wrapper #sidebar .box3 #last_in_blog .post {
+  color: #6d6d6d;
+  background: #f4f4f4;
+  margin: 10px 0px 0px 0px;
+  padding: 10px;
+  text-align: justify;
+  cursor: pointer;
+  font-size: 0.7em;
+}
+/* line 193, ../../app/stylesheets/screen.scss */
+#wrapper #sidebar .box3 #last_in_blog .post span.date {
+  color: #1e6db5;
+  font-size: 0.8em;
+}
+/* line 197, ../../app/stylesheets/screen.scss */
+#wrapper #sidebar .box3 #last_in_blog .post a {
+  display: block;
+  margin: 0px 0px 0px 0px;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #6d6d6d;
+  font-size: 1.2em;
+}
+/* line 205, ../../app/stylesheets/screen.scss */
+#wrapper #sidebar .box3 #last_in_blog .post p {
+  margin: 5px 0px 5px 0px;
+}
 
-/* line 151, ../../app/stylesheets/screen.scss */
+/* line 213, ../../app/stylesheets/screen.scss */
 #footer {
   margin: 20px 0px 0px 0px;
   font-family: 'Verdana';
@@ -266,7 +335,7 @@ a:hover {
   height: 50px;
   background: #e7f3f6;
 }
-/* line 158, ../../app/stylesheets/screen.scss */
+/* line 220, ../../app/stylesheets/screen.scss */
 #footer #copyright {
   float: left;
   width: 200px;
@@ -274,11 +343,11 @@ a:hover {
   color: #323232;
   line-heignt: 12px;
 }
-/* line 164, ../../app/stylesheets/screen.scss */
+/* line 226, ../../app/stylesheets/screen.scss */
 #footer #copyright a {
   color: #323232;
 }
-/* line 168, ../../app/stylesheets/screen.scss */
+/* line 230, ../../app/stylesheets/screen.scss */
 #footer #liveinternet {
   display: block;
   float: right;
