@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
--- Started on 2011-07-12 08:17:59 MSD
+-- Started on 2011-08-03 16:21:45 MSD
 
 SET statement_timeout = 0;
 SET client_encoding = 'UTF8';
@@ -18,7 +18,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- TOC entry 1515 (class 1259 OID 17713)
+-- TOC entry 1515 (class 1259 OID 18076)
 -- Dependencies: 6
 -- Name: articles; Type: TABLE; Schema: public; Owner: niksan; Tablespace: 
 --
@@ -35,7 +35,7 @@ CREATE TABLE articles (
 ALTER TABLE public.articles OWNER TO niksan;
 
 --
--- TOC entry 1516 (class 1259 OID 17719)
+-- TOC entry 1516 (class 1259 OID 18082)
 -- Dependencies: 1515 6
 -- Name: articles_id_seq; Type: SEQUENCE; Schema: public; Owner: niksan
 --
@@ -69,7 +69,7 @@ SELECT pg_catalog.setval('articles_id_seq', 4, true);
 
 
 --
--- TOC entry 1517 (class 1259 OID 17721)
+-- TOC entry 1517 (class 1259 OID 18084)
 -- Dependencies: 6
 -- Name: link_tags; Type: TABLE; Schema: public; Owner: niksan; Tablespace: 
 --
@@ -87,7 +87,7 @@ CREATE TABLE link_tags (
 ALTER TABLE public.link_tags OWNER TO niksan;
 
 --
--- TOC entry 1518 (class 1259 OID 17724)
+-- TOC entry 1518 (class 1259 OID 18087)
 -- Dependencies: 1517 6
 -- Name: link_tags_id_seq; Type: SEQUENCE; Schema: public; Owner: niksan
 --
@@ -117,11 +117,11 @@ ALTER SEQUENCE link_tags_id_seq OWNED BY link_tags.id;
 -- Name: link_tags_id_seq; Type: SEQUENCE SET; Schema: public; Owner: niksan
 --
 
-SELECT pg_catalog.setval('link_tags_id_seq', 18, true);
+SELECT pg_catalog.setval('link_tags_id_seq', 40, true);
 
 
 --
--- TOC entry 1519 (class 1259 OID 17726)
+-- TOC entry 1519 (class 1259 OID 18089)
 -- Dependencies: 6
 -- Name: portfolio_sites; Type: TABLE; Schema: public; Owner: niksan; Tablespace: 
 --
@@ -138,8 +138,8 @@ CREATE TABLE portfolio_sites (
 ALTER TABLE public.portfolio_sites OWNER TO niksan;
 
 --
--- TOC entry 1520 (class 1259 OID 17729)
--- Dependencies: 6 1519
+-- TOC entry 1520 (class 1259 OID 18092)
+-- Dependencies: 1519 6
 -- Name: portfolio_sites_id_seq; Type: SEQUENCE; Schema: public; Owner: niksan
 --
 
@@ -172,7 +172,7 @@ SELECT pg_catalog.setval('portfolio_sites_id_seq', 1, false);
 
 
 --
--- TOC entry 1521 (class 1259 OID 17731)
+-- TOC entry 1521 (class 1259 OID 18094)
 -- Dependencies: 6
 -- Name: portfolios; Type: TABLE; Schema: public; Owner: niksan; Tablespace: 
 --
@@ -193,7 +193,7 @@ CREATE TABLE portfolios (
 ALTER TABLE public.portfolios OWNER TO niksan;
 
 --
--- TOC entry 1522 (class 1259 OID 17737)
+-- TOC entry 1522 (class 1259 OID 18100)
 -- Dependencies: 6 1521
 -- Name: portfolios_id_seq; Type: SEQUENCE; Schema: public; Owner: niksan
 --
@@ -227,7 +227,7 @@ SELECT pg_catalog.setval('portfolios_id_seq', 1, true);
 
 
 --
--- TOC entry 1523 (class 1259 OID 17739)
+-- TOC entry 1523 (class 1259 OID 18102)
 -- Dependencies: 6
 -- Name: posts; Type: TABLE; Schema: public; Owner: niksan; Tablespace: 
 --
@@ -246,7 +246,7 @@ CREATE TABLE posts (
 ALTER TABLE public.posts OWNER TO niksan;
 
 --
--- TOC entry 1524 (class 1259 OID 17745)
+-- TOC entry 1524 (class 1259 OID 18108)
 -- Dependencies: 6 1523
 -- Name: posts_id_seq; Type: SEQUENCE; Schema: public; Owner: niksan
 --
@@ -280,7 +280,7 @@ SELECT pg_catalog.setval('posts_id_seq', 1, true);
 
 
 --
--- TOC entry 1525 (class 1259 OID 17747)
+-- TOC entry 1525 (class 1259 OID 18110)
 -- Dependencies: 6
 -- Name: schema_migrations; Type: TABLE; Schema: public; Owner: niksan; Tablespace: 
 --
@@ -293,7 +293,7 @@ CREATE TABLE schema_migrations (
 ALTER TABLE public.schema_migrations OWNER TO niksan;
 
 --
--- TOC entry 1526 (class 1259 OID 17750)
+-- TOC entry 1526 (class 1259 OID 18113)
 -- Dependencies: 6
 -- Name: sites; Type: TABLE; Schema: public; Owner: niksan; Tablespace: 
 --
@@ -315,8 +315,8 @@ CREATE TABLE sites (
 ALTER TABLE public.sites OWNER TO niksan;
 
 --
--- TOC entry 1527 (class 1259 OID 17756)
--- Dependencies: 6 1526
+-- TOC entry 1527 (class 1259 OID 18119)
+-- Dependencies: 1526 6
 -- Name: sites_id_seq; Type: SEQUENCE; Schema: public; Owner: niksan
 --
 
@@ -349,7 +349,7 @@ SELECT pg_catalog.setval('sites_id_seq', 3, true);
 
 
 --
--- TOC entry 1528 (class 1259 OID 17758)
+-- TOC entry 1528 (class 1259 OID 18121)
 -- Dependencies: 6
 -- Name: tags; Type: TABLE; Schema: public; Owner: niksan; Tablespace: 
 --
@@ -366,8 +366,8 @@ CREATE TABLE tags (
 ALTER TABLE public.tags OWNER TO niksan;
 
 --
--- TOC entry 1529 (class 1259 OID 17761)
--- Dependencies: 6 1528
+-- TOC entry 1529 (class 1259 OID 18124)
+-- Dependencies: 1528 6
 -- Name: tags_id_seq; Type: SEQUENCE; Schema: public; Owner: niksan
 --
 
@@ -396,11 +396,11 @@ ALTER SEQUENCE tags_id_seq OWNED BY tags.id;
 -- Name: tags_id_seq; Type: SEQUENCE SET; Schema: public; Owner: niksan
 --
 
-SELECT pg_catalog.setval('tags_id_seq', 3, true);
+SELECT pg_catalog.setval('tags_id_seq', 10, true);
 
 
 --
--- TOC entry 1807 (class 2604 OID 17763)
+-- TOC entry 1807 (class 2604 OID 18126)
 -- Dependencies: 1516 1515
 -- Name: id; Type: DEFAULT; Schema: public; Owner: niksan
 --
@@ -409,7 +409,7 @@ ALTER TABLE articles ALTER COLUMN id SET DEFAULT nextval('articles_id_seq'::regc
 
 
 --
--- TOC entry 1808 (class 2604 OID 17764)
+-- TOC entry 1808 (class 2604 OID 18127)
 -- Dependencies: 1518 1517
 -- Name: id; Type: DEFAULT; Schema: public; Owner: niksan
 --
@@ -418,7 +418,7 @@ ALTER TABLE link_tags ALTER COLUMN id SET DEFAULT nextval('link_tags_id_seq'::re
 
 
 --
--- TOC entry 1809 (class 2604 OID 17765)
+-- TOC entry 1809 (class 2604 OID 18128)
 -- Dependencies: 1520 1519
 -- Name: id; Type: DEFAULT; Schema: public; Owner: niksan
 --
@@ -427,7 +427,7 @@ ALTER TABLE portfolio_sites ALTER COLUMN id SET DEFAULT nextval('portfolio_sites
 
 
 --
--- TOC entry 1810 (class 2604 OID 17766)
+-- TOC entry 1810 (class 2604 OID 18129)
 -- Dependencies: 1522 1521
 -- Name: id; Type: DEFAULT; Schema: public; Owner: niksan
 --
@@ -436,7 +436,7 @@ ALTER TABLE portfolios ALTER COLUMN id SET DEFAULT nextval('portfolios_id_seq'::
 
 
 --
--- TOC entry 1811 (class 2604 OID 17767)
+-- TOC entry 1811 (class 2604 OID 18130)
 -- Dependencies: 1524 1523
 -- Name: id; Type: DEFAULT; Schema: public; Owner: niksan
 --
@@ -445,7 +445,7 @@ ALTER TABLE posts ALTER COLUMN id SET DEFAULT nextval('posts_id_seq'::regclass);
 
 
 --
--- TOC entry 1812 (class 2604 OID 17768)
+-- TOC entry 1812 (class 2604 OID 18131)
 -- Dependencies: 1527 1526
 -- Name: id; Type: DEFAULT; Schema: public; Owner: niksan
 --
@@ -454,7 +454,7 @@ ALTER TABLE sites ALTER COLUMN id SET DEFAULT nextval('sites_id_seq'::regclass);
 
 
 --
--- TOC entry 1813 (class 2604 OID 17769)
+-- TOC entry 1813 (class 2604 OID 18132)
 -- Dependencies: 1529 1528
 -- Name: id; Type: DEFAULT; Schema: public; Owner: niksan
 --
@@ -463,7 +463,7 @@ ALTER TABLE tags ALTER COLUMN id SET DEFAULT nextval('tags_id_seq'::regclass);
 
 
 --
--- TOC entry 1831 (class 0 OID 17713)
+-- TOC entry 1831 (class 0 OID 18076)
 -- Dependencies: 1515
 -- Data for Name: articles; Type: TABLE DATA; Schema: public; Owner: niksan
 --
@@ -521,22 +521,21 @@ INSERT INTO articles (id, title, body, created_at, updated_at) VALUES (1, 'О к
 
 
 --
--- TOC entry 1832 (class 0 OID 17721)
+-- TOC entry 1832 (class 0 OID 18084)
 -- Dependencies: 1517
 -- Data for Name: link_tags; Type: TABLE DATA; Schema: public; Owner: niksan
 --
 
-INSERT INTO link_tags (id, tag_id, tagged_id, tagged_type, created_at, updated_at) VALUES (1, 1, 1, 'Article', '2011-07-11 05:54:00.518016', '2011-07-11 05:54:00.518016');
 INSERT INTO link_tags (id, tag_id, tagged_id, tagged_type, created_at, updated_at) VALUES (2, 2, 1, 'Article', '2011-07-11 05:54:02.219622', '2011-07-11 05:54:02.219622');
 INSERT INTO link_tags (id, tag_id, tagged_id, tagged_type, created_at, updated_at) VALUES (3, 3, 1, 'Article', '2011-07-11 05:54:03.343817', '2011-07-11 05:54:03.343817');
 INSERT INTO link_tags (id, tag_id, tagged_id, tagged_type, created_at, updated_at) VALUES (4, 3, 4, 'Article', '2011-07-11 06:56:07.83242', '2011-07-11 06:56:07.83242');
-INSERT INTO link_tags (id, tag_id, tagged_id, tagged_type, created_at, updated_at) VALUES (5, 1, 2, 'Article', '2011-07-11 09:35:03.883457', '2011-07-11 09:35:03.883457');
 INSERT INTO link_tags (id, tag_id, tagged_id, tagged_type, created_at, updated_at) VALUES (6, 2, 3, 'Article', '2011-07-11 09:35:11.560555', '2011-07-11 09:35:11.560555');
-INSERT INTO link_tags (id, tag_id, tagged_id, tagged_type, created_at, updated_at) VALUES (18, 1, 1, 'Post', '2011-07-11 16:58:18.300772', '2011-07-11 16:58:18.300772');
+INSERT INTO link_tags (id, tag_id, tagged_id, tagged_type, created_at, updated_at) VALUES (39, 10, 1, 'Post', '2011-07-25 04:21:34.121497', '2011-07-25 04:21:34.121497');
+INSERT INTO link_tags (id, tag_id, tagged_id, tagged_type, created_at, updated_at) VALUES (40, 10, 2, 'Article', '2011-07-25 04:27:56.064562', '2011-07-25 04:27:56.064562');
 
 
 --
--- TOC entry 1833 (class 0 OID 17726)
+-- TOC entry 1833 (class 0 OID 18089)
 -- Dependencies: 1519
 -- Data for Name: portfolio_sites; Type: TABLE DATA; Schema: public; Owner: niksan
 --
@@ -544,7 +543,7 @@ INSERT INTO link_tags (id, tag_id, tagged_id, tagged_type, created_at, updated_a
 
 
 --
--- TOC entry 1834 (class 0 OID 17731)
+-- TOC entry 1834 (class 0 OID 18094)
 -- Dependencies: 1521
 -- Data for Name: portfolios; Type: TABLE DATA; Schema: public; Owner: niksan
 --
@@ -553,7 +552,7 @@ INSERT INTO portfolios (id, name, description, image_file_name, image_content_ty
 
 
 --
--- TOC entry 1835 (class 0 OID 17739)
+-- TOC entry 1835 (class 0 OID 18102)
 -- Dependencies: 1523
 -- Data for Name: posts; Type: TABLE DATA; Schema: public; Owner: niksan
 --
@@ -563,15 +562,20 @@ INSERT INTO posts (id, title, body, created_at, updated_at, short, date) VALUES 
 <p>На сайте планируется сделать следующие разделы:</p>
 
 <ul>
+
 <li>несколько информационных текстовых разделов;</li>
+
 <li>портфолио поделенное на различные разделы;</li>
+
 <li>блог;</li>
+
 <li>система тегирования сущностей на сайте;</li>
+
 </ul>', '2011-07-11 07:44:49.299596', '2011-07-11 17:00:54.966393', 'В связи с готовностью принимать новые заказы я решил переделать сайт и сделать его более удобным для пользователей.', '2011-07-11 09:15:00');
 
 
 --
--- TOC entry 1836 (class 0 OID 17747)
+-- TOC entry 1836 (class 0 OID 18110)
 -- Dependencies: 1525
 -- Data for Name: schema_migrations; Type: TABLE DATA; Schema: public; Owner: niksan
 --
@@ -592,7 +596,7 @@ INSERT INTO schema_migrations (version) VALUES ('20110711115805');
 
 
 --
--- TOC entry 1837 (class 0 OID 17750)
+-- TOC entry 1837 (class 0 OID 18113)
 -- Dependencies: 1526
 -- Data for Name: sites; Type: TABLE DATA; Schema: public; Owner: niksan
 --
@@ -609,18 +613,18 @@ INSERT INTO sites (id, name, description, url, image_file_name, image_content_ty
 
 
 --
--- TOC entry 1838 (class 0 OID 17758)
+-- TOC entry 1838 (class 0 OID 18121)
 -- Dependencies: 1528
 -- Data for Name: tags; Type: TABLE DATA; Schema: public; Owner: niksan
 --
 
 INSERT INTO tags (id, name, created_at, updated_at, link_tags_count) VALUES (3, 'поддержка сайта', '2011-07-11 05:53:36.12308', '2011-07-11 16:36:08.685229', 2);
 INSERT INTO tags (id, name, created_at, updated_at, link_tags_count) VALUES (2, 'продвижение сайта', '2011-07-11 05:53:29.146893', '2011-07-11 16:36:16.363462', 3);
-INSERT INTO tags (id, name, created_at, updated_at, link_tags_count) VALUES (1, 'разработка сайта', '2011-07-11 05:53:15.901942', '2011-07-11 16:36:23.136021', 3);
+INSERT INTO tags (id, name, created_at, updated_at, link_tags_count) VALUES (10, 'разработка сайта', '2011-07-25 04:21:28.149429', '2011-07-25 04:27:56.075286', 2);
 
 
 --
--- TOC entry 1815 (class 2606 OID 17772)
+-- TOC entry 1815 (class 2606 OID 18135)
 -- Dependencies: 1515 1515
 -- Name: articles_pkey; Type: CONSTRAINT; Schema: public; Owner: niksan; Tablespace: 
 --
@@ -630,7 +634,7 @@ ALTER TABLE ONLY articles
 
 
 --
--- TOC entry 1818 (class 2606 OID 17774)
+-- TOC entry 1818 (class 2606 OID 18137)
 -- Dependencies: 1517 1517
 -- Name: link_tags_pkey; Type: CONSTRAINT; Schema: public; Owner: niksan; Tablespace: 
 --
@@ -640,7 +644,7 @@ ALTER TABLE ONLY link_tags
 
 
 --
--- TOC entry 1821 (class 2606 OID 17776)
+-- TOC entry 1821 (class 2606 OID 18139)
 -- Dependencies: 1519 1519
 -- Name: portfolio_sites_pkey; Type: CONSTRAINT; Schema: public; Owner: niksan; Tablespace: 
 --
@@ -650,7 +654,7 @@ ALTER TABLE ONLY portfolio_sites
 
 
 --
--- TOC entry 1823 (class 2606 OID 17778)
+-- TOC entry 1823 (class 2606 OID 18141)
 -- Dependencies: 1521 1521
 -- Name: portfolios_pkey; Type: CONSTRAINT; Schema: public; Owner: niksan; Tablespace: 
 --
@@ -660,7 +664,7 @@ ALTER TABLE ONLY portfolios
 
 
 --
--- TOC entry 1825 (class 2606 OID 17780)
+-- TOC entry 1825 (class 2606 OID 18143)
 -- Dependencies: 1523 1523
 -- Name: posts_pkey; Type: CONSTRAINT; Schema: public; Owner: niksan; Tablespace: 
 --
@@ -670,7 +674,7 @@ ALTER TABLE ONLY posts
 
 
 --
--- TOC entry 1828 (class 2606 OID 17782)
+-- TOC entry 1828 (class 2606 OID 18145)
 -- Dependencies: 1526 1526
 -- Name: sites_pkey; Type: CONSTRAINT; Schema: public; Owner: niksan; Tablespace: 
 --
@@ -680,7 +684,7 @@ ALTER TABLE ONLY sites
 
 
 --
--- TOC entry 1830 (class 2606 OID 17784)
+-- TOC entry 1830 (class 2606 OID 18147)
 -- Dependencies: 1528 1528
 -- Name: tags_pkey; Type: CONSTRAINT; Schema: public; Owner: niksan; Tablespace: 
 --
@@ -690,7 +694,7 @@ ALTER TABLE ONLY tags
 
 
 --
--- TOC entry 1816 (class 1259 OID 17785)
+-- TOC entry 1816 (class 1259 OID 18148)
 -- Dependencies: 1517 1517
 -- Name: index_link_tags_on_tagged_id_and_tagged_type; Type: INDEX; Schema: public; Owner: niksan; Tablespace: 
 --
@@ -699,7 +703,7 @@ CREATE INDEX index_link_tags_on_tagged_id_and_tagged_type ON link_tags USING btr
 
 
 --
--- TOC entry 1819 (class 1259 OID 17786)
+-- TOC entry 1819 (class 1259 OID 18149)
 -- Dependencies: 1519 1519
 -- Name: index_portfolio_sites_on_portfolio_id_and_site_id; Type: INDEX; Schema: public; Owner: niksan; Tablespace: 
 --
@@ -708,7 +712,7 @@ CREATE INDEX index_portfolio_sites_on_portfolio_id_and_site_id ON portfolio_site
 
 
 --
--- TOC entry 1826 (class 1259 OID 17787)
+-- TOC entry 1826 (class 1259 OID 18150)
 -- Dependencies: 1525
 -- Name: unique_schema_migrations; Type: INDEX; Schema: public; Owner: niksan; Tablespace: 
 --
@@ -728,7 +732,7 @@ GRANT ALL ON SCHEMA public TO postgres;
 GRANT ALL ON SCHEMA public TO PUBLIC;
 
 
--- Completed on 2011-07-12 08:17:59 MSD
+-- Completed on 2011-08-03 16:21:45 MSD
 
 --
 -- PostgreSQL database dump complete
