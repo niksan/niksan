@@ -9,8 +9,8 @@
         = link_to 'Главная', root_path, :id => id
         - id = ( controller_name == 'portfolio' ) ? 'act_button' : nil
         = link_to 'Портфолио', root_path, :id => id
-        - id = ( controller_name == 'price' ) ? 'act_button' : nil
-        = link_to 'Цены', root_path, :id => id
+        - id = ( controller_name == 'articles' && @article_id == 5 ) ? 'act_button' : nil
+        = link_to 'Цены', article_path(5), :id => id
         - id = ( controller_name == 'contacts' ) ? 'act_button' : nil
         = link_to 'Контакты', root_path, :id => id
         - id = ( controller_name == 'blog' ) ? 'act_button' : nil

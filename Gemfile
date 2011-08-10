@@ -5,9 +5,9 @@ gem 'rails', '3.0.9'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+gem 'mysql2', '0.2.7'
 gem 'haml'
-gem 'xmpp4r'
+gem 'sass'
 gem 'compass'
 gem 'paperclip'
 gem 'typus'
