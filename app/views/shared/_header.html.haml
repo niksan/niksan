@@ -11,8 +11,8 @@
         = link_to 'Портфолио', root_path, :id => id
         - id = ( controller_name == 'articles' && @article_id == 5 ) ? 'act_button' : nil
         = link_to 'Цены', article_path(5), :id => id
-        - id = ( controller_name == 'contacts' ) ? 'act_button' : nil
-        = link_to 'Контакты', root_path, :id => id
+        - id = ( controller_name == 'articles' && @article_id == 6 ) ? 'act_button' : nil
+        = link_to 'Контакты', article_path(6), :id => id
         - id = ( controller_name == 'blog' ) ? 'act_button' : nil
         = link_to 'Блог', blog_index_path, :id => id
   .bottom_line
