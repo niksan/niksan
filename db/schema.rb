@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110711115805) do
+ActiveRecord::Schema.define(:version => 20110811201947) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
@@ -18,6 +18,18 @@ ActiveRecord::Schema.define(:version => 20110711115805) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "gritter_notices", :force => true do |t|
+    t.integer  "owner_id",     :null => false
+    t.string   "owner_type",   :null => false
+    t.text     "text",         :null => false
+    t.text     "options",      :null => false
+    t.datetime "delivered_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "gritter_notices", ["owner_id", "delivered_at"], :name => "index_gritter_notices_on_owner_id_and_delivered_at"
 
   create_table "link_tags", :force => true do |t|
     t.integer  "tag_id"

@@ -11,6 +11,7 @@ gem 'sass'
 gem 'compass'
 gem 'paperclip'
 gem 'typus'
+gem 'gritter_notices'
 
 # Use unicorn as the web server
 # gem 'unicorn'

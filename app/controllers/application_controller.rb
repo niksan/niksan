@@ -11,5 +11,6 @@ class ApplicationController < ActionController::Base
 
     def last_posts
       @last_posts = Post.limit(4).order('id DESC')
+			flash[:notice] = 'Oops!'
     end
 end
