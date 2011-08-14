@@ -1,48 +1,11 @@
 ru:
-
-  devise:
-    failure:
-      unauthenticated: "Вам необходимо войти в систему или зарегистрироваться."
-      unconfirmed: "Вы должны подтвердить вашу учётную запись."
-      locked: "Ваша учётная запись заблокирована."
-      invalid: "Неверный адрес e-mail или пароль."
-      invalid_token: "Неверный ключ аутентификации."
-      timeout: "Ваш сеанс закончился. Пожалуйста, войдите в систему снова."
-      inactive: "Ваша учётная запись ещё не активирована."
-    sessions:
-      signed_in: "Вход в систему выполнен."
-      signed_out: "Выход из системы выполнен."
-    passwords:
-      send_instructions: "В течение нескольких минут вы получите e-mail с инструкциями по восстановлению вашего пароля."
-      updated: "Ваш пароль изменён. Теперь вы вошли в систему."
-    confirmations:
-      send_instructions: "В течение нескольких минут вы получите e-mail с инструкциями по подтверждению вашей учётной записи."
-      confirmed: "Ваша учётная запись подтверждена. Теперь вы вошли в систему."
-    registrations:
-      signed_up: "Добро пожаловать! Вы успешно зарегистрировались."
-      inactive_signed_up: 'Добро пожаловать! Вы успешно зарегистрировались. Но пока вы не можете войти в систему, т.к. ваша учётная запись %{reason}.'
-      updated: "Ваша учётная запись изменена."
-      destroyed: "До свидания! Ваша учётная запись удалена. Надеемся снова увидеть вас."
-    unlocks:
-      send_instructions: "В течение нескольких минут вы получите письмо с инструкциями по разблокировке вашей учётной записи."
-      unlocked: "Ваша учётная запись разблокирована. Теперь вы вошли в систему."
-    omniauth_callbacks:
-      success: 'Successfully authorized from %{kind} account.'
-      failure: 'Could not authorize you from %{kind} because "%{reason}".'
-    mailer:
-      confirmation_instructions:
-        subject: "Инструкции по подтверждению учётной записи"
-      reset_password_instructions:
-        subject: "Инструкции по восстановлению пароля"
-      unlock_instructions:
-        subject: "Инструкции по разблокировке учётной записи"
-
   date:
     formats:
       default: "%a, %d %b %Y, %H:%M:%S %z"
       short: "%d %b, %H:%M"
       long: "%d %B %Y, %H:%M"
       for_news: "%d %b %Y"
+      birthday: "%d.%b.%Y"
 
     day_names: [воскресенье, понедельник, вторник, среда, четверг, пятница, суббота]
     standalone_day_names: [Воскресенье, Понедельник, Вторник, Среда, Четверг, Пятница, Суббота]
@@ -61,7 +24,7 @@ ru:
       default: "%a, %d %b %Y, %H:%M:%S %z"
       short: "%d %b, %H:%M"
       long: "%d %B %Y, %H:%M"
-      short_date: "%m.%d.%Y %H:%M"
+      short_date: "%m-%d-%Y"
       date: "%d.%m.%Y"
       for_news: "%d %b %Y"
     am: "утра"
@@ -243,35 +206,3 @@ ru:
       words_connector: ", "
       two_words_connector: " и "
       last_word_connector: " и "
-  devise:
-    failure:
-      unauthenticated: 'You need to sign in or sign up before continuing.'
-      unconfirmed: 'You have to confirm your account before continuing.'
-      locked: 'Your account is locked.'
-      invalid: 'Invalid email or password.'
-      invalid_token: 'Invalid authentication token.'
-      timeout: 'Your session expired, please sign in again to continue.'
-      inactive: 'Your account was not activated yet.'
-    sessions:
-      signed_in: 'Авторизация выполнена успешно.'
-      signed_out: 'Вы успешно вышли.'
-    passwords:
-      send_instructions: 'You will receive an email with instructions about how to reset your password in a few minutes.'
-      updated: 'Your password was changed successfully. You are now signed in.'
-    confirmations:
-      send_instructions: 'You will receive an email with instructions about how to confirm your account in a few minutes.'
-      confirmed: 'Your account was successfully confirmed. You are now signed in.'
-    registrations:
-      signed_up: 'You have signed up successfully. If enabled, a confirmation was sent to your e-mail.'
-      updated: 'You updated your account successfully.'
-      destroyed: 'Bye! Your account was successfully cancelled. We hope to see you again soon.'
-    unlocks:
-      send_instructions: 'You will receive an email with instructions about how to unlock your account in a few minutes.'
-      unlocked: 'Your account was successfully unlocked. You are now signed in.'
-    mailer:
-      confirmation_instructions:
-        subject: 'Confirmation instructions'
-      reset_password_instructions:
-        subject: 'Reset password instructions'
-      unlock_instructions:
-        subject: 'Unlock Instructions'

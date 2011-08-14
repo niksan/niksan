@@ -234,7 +234,7 @@ a:hover {
 }
 /* line 131, ../../app/stylesheets/screen.scss */
 #wrapper #content #tags a.tag {
-  padding: 0px 0px 0px 19px;
+  padding: 0px 0px 1px 19px;
   margin: 0px 10px 0px 0px;
   background: url("/images/icons/tag.gif") no-repeat top left;
   font-size: 0.9em;
