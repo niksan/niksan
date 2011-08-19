@@ -1,0 +1,27 @@
+/* line 3, ../../app/stylesheets/sites.scss */
+.site_box {
+  width: 170px;
+  height: 180px;
+  margin: 0px 0px 10px 10px;
+  padding: 7px;
+  border: solid 1px #000;
+  float: left;
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  -o-border-radius: 4px / 4px;
+  -ms-border-radius: 4px / 4px;
+  -khtml-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
+  behavior: url(/stylesheets/PIE.htc);
+}
+/* line 12, ../../app/stylesheets/sites.scss */
+.site_box .site_thumb {
+  margin: 2px auto 10px auto;
+  width: 170px;
+  height: 120px;
+  overflow: hidden;
+}
+/* line 18, ../../app/stylesheets/sites.scss */
+.site_box a.site_name {
+  text-decoration: none;
+}

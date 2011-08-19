@@ -132,48 +132,49 @@ a:hover {
   text-align: center;
   text-transform: lowercase;
   text-shadow: 0px 1px 0px #000;
+  behavior: url(/stylesheets/PIE.htc);
   padding: 6px 0px 0px 0px;
   width: 113px;
   height: 40px;
 }
-/* line 58, ../../app/stylesheets/screen.scss */
+/* line 59, ../../app/stylesheets/screen.scss */
 #header_wrap #header ul#main_menu li a:hover {
   background: url("/images/header/menu_button_bg.png") no-repeat top;
   color: #fff;
 }
-/* line 63, ../../app/stylesheets/screen.scss */
+/* line 64, ../../app/stylesheets/screen.scss */
 #header_wrap #header ul#main_menu li a.active {
   background: url("/images/header/menu_button_bg.png") no-repeat top;
   color: #fff;
 }
-/* line 70, ../../app/stylesheets/screen.scss */
+/* line 71, ../../app/stylesheets/screen.scss */
 #header_wrap .bottom_line {
   height: 8px;
   background: url("/images/header/line_bg.png");
 }
 
-/* line 75, ../../app/stylesheets/screen.scss */
+/* line 76, ../../app/stylesheets/screen.scss */
 #wrapper {
   margin: 85px 0px 0px 0px;
   font-family: 'Arial';
   color: #333;
 }
-/* line 79, ../../app/stylesheets/screen.scss */
+/* line 80, ../../app/stylesheets/screen.scss */
 #wrapper #content {
   margin: 0px 0px 0px -360px;
   width: 100%;
   float: left;
 }
-/* line 83, ../../app/stylesheets/screen.scss */
+/* line 84, ../../app/stylesheets/screen.scss */
 #wrapper #content ul {
   margin: 15px 0px 5px 0px;
 }
-/* line 85, ../../app/stylesheets/screen.scss */
+/* line 86, ../../app/stylesheets/screen.scss */
 #wrapper #content ul li {
   list-style-type: disc;
   margin: 0px 0px 0px 20px;
 }
-/* line 90, ../../app/stylesheets/screen.scss */
+/* line 91, ../../app/stylesheets/screen.scss */
 #wrapper #content .box1 {
   min-height: 200px;
   margin: 0px 0px 10px 370px;
@@ -184,10 +185,11 @@ a:hover {
   -ms-border-radius: 6px / 6px;
   -khtml-border-radius: 6px / 6px;
   border-radius: 6px / 6px;
+  behavior: url(/stylesheets/PIE.htc);
   padding: 10px 10px 10px 10px;
   background: #f4faf0;
 }
-/* line 98, ../../app/stylesheets/screen.scss */
+/* line 100, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 {
   min-height: 200px;
   border: solid 1px #d0d0d0;
@@ -197,17 +199,18 @@ a:hover {
   -ms-border-radius: 6px / 6px;
   -khtml-border-radius: 6px / 6px;
   border-radius: 6px / 6px;
+  behavior: url(/stylesheets/PIE.htc);
   padding: 10px 10px 10px 10px;
   background: #fff;
   margin: 0px 0px 0px 370px;
   color: #222;
   font-size: 0.9em;
 }
-/* line 107, ../../app/stylesheets/screen.scss */
+/* line 110, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 p {
   margin: 20px 0px 20px 0px;
 }
-/* line 110, ../../app/stylesheets/screen.scss */
+/* line 113, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 h1 {
   font-size: 2.0em;
   margin: 0px 0px 20px 10px;
@@ -215,7 +218,7 @@ a:hover {
   background: url("/images/content/h1_bg.jpg") no-repeat left;
   padding: 5px 0px 0px 18px;
 }
-/* line 117, ../../app/stylesheets/screen.scss */
+/* line 120, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 h2 {
   display: inline;
   font-size: 1.6em;
@@ -223,16 +226,16 @@ a:hover {
   font-family: 'Times new roman';
   border-bottom: dotted 1px;
 }
-/* line 124, ../../app/stylesheets/screen.scss */
+/* line 127, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 span.date {
   font-style: italic;
   font-size: 0.8em;
 }
-/* line 129, ../../app/stylesheets/screen.scss */
+/* line 132, ../../app/stylesheets/screen.scss */
 #wrapper #content #tags {
   margin: 15px 0px 10px 0px;
 }
-/* line 131, ../../app/stylesheets/screen.scss */
+/* line 134, ../../app/stylesheets/screen.scss */
 #wrapper #content #tags a.tag {
   padding: 0px 0px 1px 19px;
   margin: 0px 10px 0px 0px;
@@ -241,17 +244,17 @@ a:hover {
   line-height: 16px;
   color: #555;
 }
-/* line 138, ../../app/stylesheets/screen.scss */
+/* line 141, ../../app/stylesheets/screen.scss */
 #wrapper #content #tags a.tag:hover {
   color: #ff6666;
 }
-/* line 144, ../../app/stylesheets/screen.scss */
+/* line 147, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar {
   float: right;
   width: 340px;
   margin: 0px 10px 0px 0px;
 }
-/* line 148, ../../app/stylesheets/screen.scss */
+/* line 151, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 {
   border: solid 1px #d0d0d0;
   -webkit-border-radius: 6px 6px;
@@ -260,25 +263,26 @@ a:hover {
   -ms-border-radius: 6px / 6px;
   -khtml-border-radius: 6px / 6px;
   border-radius: 6px / 6px;
+  behavior: url(/stylesheets/PIE.htc);
   background: #e8e8e8;
   min-height: 50px;
   width: 300px;
   margin: 0px 0px 10px 0px;
   padding: 20px 20px 20px 20px;
 }
-/* line 156, ../../app/stylesheets/screen.scss */
+/* line 160, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 span.header {
   display: block;
   margin: 0px 0px 15px 20px;
   color: #6D6D6D;
   font-size: 22px;
 }
-/* line 162, ../../app/stylesheets/screen.scss */
+/* line 166, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 .contacts {
   font-size: 18px;
   line-height: 24px;
 }
-/* line 167, ../../app/stylesheets/screen.scss */
+/* line 171, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #new_sites .site {
   background: #f4f4f4;
   margin: 10px 0px 0px 0px;
@@ -286,18 +290,18 @@ a:hover {
   text-align: center;
   cursor: pointer;
 }
-/* line 173, ../../app/stylesheets/screen.scss */
+/* line 177, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #new_sites .site a {
   font-size: 0.9em;
   display: block;
   margin: 5px 0px 0px 0px;
   color: #1e6db5;
 }
-/* line 178, ../../app/stylesheets/screen.scss */
+/* line 182, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #new_sites .site a:hover {
   text-decoration: underline;
 }
-/* line 185, ../../app/stylesheets/screen.scss */
+/* line 189, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #last_in_blog .post {
   color: #6d6d6d;
   background: #f4f4f4;
@@ -307,12 +311,12 @@ a:hover {
   cursor: pointer;
   font-size: 0.7em;
 }
-/* line 193, ../../app/stylesheets/screen.scss */
+/* line 197, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #last_in_blog .post span.date {
   color: #1e6db5;
   font-size: 0.8em;
 }
-/* line 197, ../../app/stylesheets/screen.scss */
+/* line 201, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #last_in_blog .post a {
   display: block;
   margin: 0px 0px 0px 0px;
@@ -321,12 +325,12 @@ a:hover {
   color: #6d6d6d;
   font-size: 1.2em;
 }
-/* line 205, ../../app/stylesheets/screen.scss */
+/* line 209, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #last_in_blog .post p {
   margin: 5px 0px 5px 0px;
 }
 
-/* line 213, ../../app/stylesheets/screen.scss */
+/* line 217, ../../app/stylesheets/screen.scss */
 #footer {
   margin: 20px 0px 0px 0px;
   font-family: 'Verdana';
@@ -335,7 +339,7 @@ a:hover {
   height: 50px;
   background: #e7f3f6;
 }
-/* line 220, ../../app/stylesheets/screen.scss */
+/* line 224, ../../app/stylesheets/screen.scss */
 #footer #copyright {
   float: left;
   width: 200px;
@@ -343,11 +347,11 @@ a:hover {
   color: #323232;
   line-heignt: 12px;
 }
-/* line 226, ../../app/stylesheets/screen.scss */
+/* line 230, ../../app/stylesheets/screen.scss */
 #footer #copyright a {
   color: #323232;
 }
-/* line 230, ../../app/stylesheets/screen.scss */
+/* line 234, ../../app/stylesheets/screen.scss */
 #footer #liveinternet {
   display: block;
   float: right;

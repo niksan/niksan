@@ -55,8 +55,8 @@ Post:
 Site:
   fields:
     default: image, name, url
-    form: name, url, description, image
-  order_by: 
+    form: name, url, description, date, image
+  order_by: date
   relationships: portfolio_sites, portfolios
   filters: created_at
   search: name

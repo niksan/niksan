@@ -1,0 +1,21 @@
+@import "compass/css3/border-radius";
+
+.site_box{
+	width: 170px;
+	height: 180px;
+	margin: 0px 0px 10px 10px;
+	padding: 7px;
+	border: solid 1px #000;
+	float: left;
+	@include border-radius(4px, 4px);
+	behavior: url(/stylesheets/PIE.htc);
+	.site_thumb{
+		margin: 2px auto 10px auto;
+		width: 170px;
+		height: 120px;
+		overflow: hidden;
+	}
+	a.site_name{
+		text-decoration: none;	
+	}
+}

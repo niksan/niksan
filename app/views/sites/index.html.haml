@@ -1,2 +1,7 @@
 %h1
 	Портфолио
+- @sites.each do |site|
+	.site_box
+		.site_thumb
+			= image_tag site.image.url(:thumb), :alt => site.name
+		= link_to site.name, site_path(site), :class => :site_name
