@@ -4,6 +4,6 @@
   #new_sites
     - @new_sites.each do |site|
       %div.site
-        = image_tag site.image.url(:small)
-        = link_to site.name, '/'
+        = image_tag site.image.url(:small), :class => 'site_small2'
+        = link_to site.name, site_path(site)
 .clear

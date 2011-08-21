@@ -26,13 +26,13 @@ a{
       float: left;
       img#logo{
         display: block;
-        margin: 12px 0px 0px 10px;
+        margin: 20px 0px 0px 15px;
       }
     }
     img#website_development{
       display: block;
       float: left;
-      margin: 15px 0px 0px 20px;
+      margin: 15px 0px 0px 15px;
     }
     ul#main_menu{
       float: left;
@@ -116,6 +116,8 @@ a{
         font-family: 'Times new roman';
         background: url('/images/content/h1_bg.jpg') no-repeat left;
         padding: 5px 0px 0px 18px;
+				color: #333;
+				a{ color: #333; text-decoration: underline; }
       }
       h2{
         display: inline;

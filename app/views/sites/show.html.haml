@@ -1,2 +1,8 @@
-<h1>Sites#show</h1>
-<p>Find me in app/views/sites/show.html.erb</p>
+%h1
+	= link_to 'Портфолио', sites_path
+	&rarr;
+	= @site.name
+= image_tag @site.image.url(:small), :align => :left, :class => 'small_site_img'
+= raw(@site.description)
+%p
+	= link_to @site.url, @site.url, :target => '_blank'

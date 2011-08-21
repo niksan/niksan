@@ -101,13 +101,13 @@ a:hover {
 /* line 27, ../../app/stylesheets/screen.scss */
 #header_wrap #header a img#logo {
   display: block;
-  margin: 12px 0px 0px 10px;
+  margin: 20px 0px 0px 15px;
 }
 /* line 32, ../../app/stylesheets/screen.scss */
 #header_wrap #header img#website_development {
   display: block;
   float: left;
-  margin: 15px 0px 0px 20px;
+  margin: 15px 0px 0px 15px;
 }
 /* line 37, ../../app/stylesheets/screen.scss */
 #header_wrap #header ul#main_menu {
@@ -217,8 +217,14 @@ a:hover {
   font-family: 'Times new roman';
   background: url("/images/content/h1_bg.jpg") no-repeat left;
   padding: 5px 0px 0px 18px;
+  color: #333;
 }
 /* line 120, ../../app/stylesheets/screen.scss */
+#wrapper #content .box2 h1 a {
+  color: #333;
+  text-decoration: underline;
+}
+/* line 122, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 h2 {
   display: inline;
   font-size: 1.6em;
@@ -226,16 +232,16 @@ a:hover {
   font-family: 'Times new roman';
   border-bottom: dotted 1px;
 }
-/* line 127, ../../app/stylesheets/screen.scss */
+/* line 129, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 span.date {
   font-style: italic;
   font-size: 0.8em;
 }
-/* line 132, ../../app/stylesheets/screen.scss */
+/* line 134, ../../app/stylesheets/screen.scss */
 #wrapper #content #tags {
   margin: 15px 0px 10px 0px;
 }
-/* line 134, ../../app/stylesheets/screen.scss */
+/* line 136, ../../app/stylesheets/screen.scss */
 #wrapper #content #tags a.tag {
   padding: 0px 0px 1px 19px;
   margin: 0px 10px 0px 0px;
@@ -244,17 +250,17 @@ a:hover {
   line-height: 16px;
   color: #555;
 }
-/* line 141, ../../app/stylesheets/screen.scss */
+/* line 143, ../../app/stylesheets/screen.scss */
 #wrapper #content #tags a.tag:hover {
   color: #ff6666;
 }
-/* line 147, ../../app/stylesheets/screen.scss */
+/* line 149, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar {
   float: right;
   width: 340px;
   margin: 0px 10px 0px 0px;
 }
-/* line 151, ../../app/stylesheets/screen.scss */
+/* line 153, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 {
   border: solid 1px #d0d0d0;
   -webkit-border-radius: 6px 6px;
@@ -270,19 +276,19 @@ a:hover {
   margin: 0px 0px 10px 0px;
   padding: 20px 20px 20px 20px;
 }
-/* line 160, ../../app/stylesheets/screen.scss */
+/* line 162, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 span.header {
   display: block;
   margin: 0px 0px 15px 20px;
   color: #6D6D6D;
   font-size: 22px;
 }
-/* line 166, ../../app/stylesheets/screen.scss */
+/* line 168, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 .contacts {
   font-size: 18px;
   line-height: 24px;
 }
-/* line 171, ../../app/stylesheets/screen.scss */
+/* line 173, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #new_sites .site {
   background: #f4f4f4;
   margin: 10px 0px 0px 0px;
@@ -290,18 +296,18 @@ a:hover {
   text-align: center;
   cursor: pointer;
 }
-/* line 177, ../../app/stylesheets/screen.scss */
+/* line 179, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #new_sites .site a {
   font-size: 0.9em;
   display: block;
   margin: 5px 0px 0px 0px;
   color: #1e6db5;
 }
-/* line 182, ../../app/stylesheets/screen.scss */
+/* line 184, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #new_sites .site a:hover {
   text-decoration: underline;
 }
-/* line 189, ../../app/stylesheets/screen.scss */
+/* line 191, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #last_in_blog .post {
   color: #6d6d6d;
   background: #f4f4f4;
@@ -311,12 +317,12 @@ a:hover {
   cursor: pointer;
   font-size: 0.7em;
 }
-/* line 197, ../../app/stylesheets/screen.scss */
+/* line 199, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #last_in_blog .post span.date {
   color: #1e6db5;
   font-size: 0.8em;
 }
-/* line 201, ../../app/stylesheets/screen.scss */
+/* line 203, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #last_in_blog .post a {
   display: block;
   margin: 0px 0px 0px 0px;
@@ -325,12 +331,12 @@ a:hover {
   color: #6d6d6d;
   font-size: 1.2em;
 }
-/* line 209, ../../app/stylesheets/screen.scss */
+/* line 211, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #last_in_blog .post p {
   margin: 5px 0px 5px 0px;
 }
 
-/* line 217, ../../app/stylesheets/screen.scss */
+/* line 219, ../../app/stylesheets/screen.scss */
 #footer {
   margin: 20px 0px 0px 0px;
   font-family: 'Verdana';
@@ -339,7 +345,7 @@ a:hover {
   height: 50px;
   background: #e7f3f6;
 }
-/* line 224, ../../app/stylesheets/screen.scss */
+/* line 226, ../../app/stylesheets/screen.scss */
 #footer #copyright {
   float: left;
   width: 200px;
@@ -347,11 +353,11 @@ a:hover {
   color: #323232;
   line-heignt: 12px;
 }
-/* line 230, ../../app/stylesheets/screen.scss */
+/* line 232, ../../app/stylesheets/screen.scss */
 #footer #copyright a {
   color: #323232;
 }
-/* line 234, ../../app/stylesheets/screen.scss */
+/* line 236, ../../app/stylesheets/screen.scss */
 #footer #liveinternet {
   display: block;
   float: right;

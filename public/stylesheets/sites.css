@@ -1,10 +1,11 @@
-/* line 3, ../../app/stylesheets/sites.scss */
-.site_box {
+/* line 4, ../../app/stylesheets/sites.scss */
+#sites .site_box {
+  cursor: pointer;
   width: 170px;
   height: 180px;
   margin: 0px 0px 10px 10px;
   padding: 7px;
-  border: solid 1px #000;
+  border: solid 1px #b3b3b3;
   float: left;
   -webkit-border-radius: 4px 4px;
   -moz-border-radius: 4px / 4px;
@@ -14,14 +15,28 @@
   border-radius: 4px / 4px;
   behavior: url(/stylesheets/PIE.htc);
 }
-/* line 12, ../../app/stylesheets/sites.scss */
-.site_box .site_thumb {
+/* line 14, ../../app/stylesheets/sites.scss */
+#sites .site_box .site_thumb {
   margin: 2px auto 10px auto;
   width: 170px;
   height: 120px;
   overflow: hidden;
 }
-/* line 18, ../../app/stylesheets/sites.scss */
-.site_box a.site_name {
+/* line 20, ../../app/stylesheets/sites.scss */
+#sites .site_box a.site_name {
+  display: block;
   text-decoration: none;
+  text-align: center;
+  color: #314c88;
+}
+/* line 27, ../../app/stylesheets/sites.scss */
+#sites .active {
+  border: solid 1px #6d6d6d;
+  box-shadow: 0px 0px 5px #6d6d6d;
+  behavior: url(/stylesheets/PIE.htc);
+}
+
+/* line 33, ../../app/stylesheets/sites.scss */
+img.small_site_img {
+  margin: 0px 10px 5px 0px;
 }

@@ -8,9 +8,14 @@ $(document).ready(function(){
       $('#act_button').addClass('active');
     }
   );
-  $('#new_sites .site').click(
-    function(){
-      window.location=$(this).find("a").attr("href"); return false;
-    }
-  );
+  $('#new_sites .site').click( function(){ window.location=$(this).find("a").attr("href"); return false; });
+  $('.site_box').click( function(){ window.location=$(this).find("a").attr("href"); return false; });
+	$('.site_box').hover(
+		function(){
+			$(this).addClass('active');
+		},
+		function(){
+			$(this).removeClass('active');
+		}
+	);
 });
