@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
 
   private
     def new_sites
-      @new_sites = Site.limit(2).order('id DESC')
+      @new_sites = Site.limit(2).order('date DESC')
     end
 
     def last_posts

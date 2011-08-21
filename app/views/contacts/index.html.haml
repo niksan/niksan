@@ -1,0 +1,34 @@
+%h1
+	= @article.title
+= raw(@article.body)
+= form_for :message do |f|
+	%table
+		%tbody
+			%tr
+				%td<
+					= f.label :name, 'Имя: '
+				%td<
+					= f.text_field :name
+			%tr
+				%td<
+					= f.label :email, 'E-mail: '
+				%td<
+					= f.text_field :email
+			%tr
+				%td<
+					= f.label :phone, 'Телефон: '
+				%td<
+					= f.text_field :phone
+			%tr
+				%td<
+					= f.label :theme, 'Тема: '
+				%td<
+					= f.text_field :theme
+			%tr
+				%td<
+				%td<
+					= f.text_area :body	
+			%tr
+				%td
+				%td
+					= f.submit 'Отправить'

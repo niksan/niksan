@@ -5,4 +5,5 @@
 = image_tag @site.image.url(:small), :align => :left, :class => 'small_site_img'
 = raw(@site.description)
 %p
+	Адрес сайта: 
 	= link_to @site.url, @site.url, :target => '_blank'

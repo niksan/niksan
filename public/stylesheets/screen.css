@@ -166,15 +166,27 @@ a:hover {
   float: left;
 }
 /* line 84, ../../app/stylesheets/screen.scss */
+#wrapper #content input[type=text] {
+  border: solid 1px #000;
+  -webkit-border-radius: 3px 3px;
+  -moz-border-radius: 3px / 3px;
+  -o-border-radius: 3px / 3px;
+  -ms-border-radius: 3px / 3px;
+  -khtml-border-radius: 3px / 3px;
+  border-radius: 3px / 3px;
+  behavior: url(/stylesheets/PIE.htc);
+}
+/* line 89, ../../app/stylesheets/screen.scss */
 #wrapper #content ul {
   margin: 15px 0px 5px 0px;
 }
-/* line 86, ../../app/stylesheets/screen.scss */
+/* line 91, ../../app/stylesheets/screen.scss */
 #wrapper #content ul li {
   list-style-type: disc;
   margin: 0px 0px 0px 20px;
+  color: #333;
 }
-/* line 91, ../../app/stylesheets/screen.scss */
+/* line 97, ../../app/stylesheets/screen.scss */
 #wrapper #content .box1 {
   min-height: 200px;
   margin: 0px 0px 10px 370px;
@@ -189,7 +201,7 @@ a:hover {
   padding: 10px 10px 10px 10px;
   background: #f4faf0;
 }
-/* line 100, ../../app/stylesheets/screen.scss */
+/* line 106, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 {
   min-height: 200px;
   border: solid 1px #d0d0d0;
@@ -206,11 +218,11 @@ a:hover {
   color: #222;
   font-size: 0.9em;
 }
-/* line 110, ../../app/stylesheets/screen.scss */
+/* line 116, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 p {
   margin: 20px 0px 20px 0px;
 }
-/* line 113, ../../app/stylesheets/screen.scss */
+/* line 119, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 h1 {
   font-size: 2.0em;
   margin: 0px 0px 20px 10px;
@@ -219,29 +231,30 @@ a:hover {
   padding: 5px 0px 0px 18px;
   color: #333;
 }
-/* line 120, ../../app/stylesheets/screen.scss */
+/* line 126, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 h1 a {
   color: #333;
   text-decoration: underline;
 }
-/* line 122, ../../app/stylesheets/screen.scss */
+/* line 128, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 h2 {
   display: inline;
   font-size: 1.6em;
   margin: 0px 0px 15px 10px;
   font-family: 'Times new roman';
   border-bottom: dotted 1px;
+  color: #333;
 }
-/* line 129, ../../app/stylesheets/screen.scss */
+/* line 136, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 span.date {
   font-style: italic;
   font-size: 0.8em;
 }
-/* line 134, ../../app/stylesheets/screen.scss */
+/* line 141, ../../app/stylesheets/screen.scss */
 #wrapper #content #tags {
   margin: 15px 0px 10px 0px;
 }
-/* line 136, ../../app/stylesheets/screen.scss */
+/* line 143, ../../app/stylesheets/screen.scss */
 #wrapper #content #tags a.tag {
   padding: 0px 0px 1px 19px;
   margin: 0px 10px 0px 0px;
@@ -250,17 +263,17 @@ a:hover {
   line-height: 16px;
   color: #555;
 }
-/* line 143, ../../app/stylesheets/screen.scss */
+/* line 150, ../../app/stylesheets/screen.scss */
 #wrapper #content #tags a.tag:hover {
   color: #ff6666;
 }
-/* line 149, ../../app/stylesheets/screen.scss */
+/* line 156, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar {
   float: right;
   width: 340px;
   margin: 0px 10px 0px 0px;
 }
-/* line 153, ../../app/stylesheets/screen.scss */
+/* line 160, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 {
   border: solid 1px #d0d0d0;
   -webkit-border-radius: 6px 6px;
@@ -276,19 +289,19 @@ a:hover {
   margin: 0px 0px 10px 0px;
   padding: 20px 20px 20px 20px;
 }
-/* line 162, ../../app/stylesheets/screen.scss */
+/* line 169, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 span.header {
   display: block;
   margin: 0px 0px 15px 20px;
   color: #6D6D6D;
   font-size: 22px;
 }
-/* line 168, ../../app/stylesheets/screen.scss */
+/* line 175, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 .contacts {
   font-size: 18px;
   line-height: 24px;
 }
-/* line 173, ../../app/stylesheets/screen.scss */
+/* line 180, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #new_sites .site {
   background: #f4f4f4;
   margin: 10px 0px 0px 0px;
@@ -296,18 +309,31 @@ a:hover {
   text-align: center;
   cursor: pointer;
 }
-/* line 179, ../../app/stylesheets/screen.scss */
+/* line 186, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #new_sites .site a {
   font-size: 0.9em;
   display: block;
   margin: 5px 0px 0px 0px;
   color: #1e6db5;
 }
-/* line 184, ../../app/stylesheets/screen.scss */
+/* line 191, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #new_sites .site a:hover {
   text-decoration: underline;
 }
-/* line 191, ../../app/stylesheets/screen.scss */
+/* line 196, ../../app/stylesheets/screen.scss */
+#wrapper #sidebar .box3 #new_sites #to_portfolio {
+  display: block;
+  margin: 20px 0px 10px 0px;
+  text-align: center;
+  font-size: 14px;
+  color: #6d6d6d;
+  text-decoration: none;
+}
+/* line 203, ../../app/stylesheets/screen.scss */
+#wrapper #sidebar .box3 #new_sites #to_portfolio:hover {
+  text-decoration: underline;
+}
+/* line 209, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #last_in_blog .post {
   color: #6d6d6d;
   background: #f4f4f4;
@@ -317,12 +343,12 @@ a:hover {
   cursor: pointer;
   font-size: 0.7em;
 }
-/* line 199, ../../app/stylesheets/screen.scss */
+/* line 217, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #last_in_blog .post span.date {
   color: #1e6db5;
   font-size: 0.8em;
 }
-/* line 203, ../../app/stylesheets/screen.scss */
+/* line 221, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #last_in_blog .post a {
   display: block;
   margin: 0px 0px 0px 0px;
@@ -331,12 +357,12 @@ a:hover {
   color: #6d6d6d;
   font-size: 1.2em;
 }
-/* line 211, ../../app/stylesheets/screen.scss */
+/* line 229, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #last_in_blog .post p {
   margin: 5px 0px 5px 0px;
 }
 
-/* line 219, ../../app/stylesheets/screen.scss */
+/* line 237, ../../app/stylesheets/screen.scss */
 #footer {
   margin: 20px 0px 0px 0px;
   font-family: 'Verdana';
@@ -345,7 +371,7 @@ a:hover {
   height: 50px;
   background: #e7f3f6;
 }
-/* line 226, ../../app/stylesheets/screen.scss */
+/* line 244, ../../app/stylesheets/screen.scss */
 #footer #copyright {
   float: left;
   width: 200px;
@@ -353,11 +379,11 @@ a:hover {
   color: #323232;
   line-heignt: 12px;
 }
-/* line 232, ../../app/stylesheets/screen.scss */
+/* line 250, ../../app/stylesheets/screen.scss */
 #footer #copyright a {
   color: #323232;
 }
-/* line 236, ../../app/stylesheets/screen.scss */
+/* line 254, ../../app/stylesheets/screen.scss */
 #footer #liveinternet {
   display: block;
   float: right;

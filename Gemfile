@@ -12,6 +12,7 @@ gem 'compass'
 gem 'paperclip'
 gem 'typus'
 gem 'gritter_notices'
+gem 'als_typograf', :git => 'git://github.com/ivanzotov/als_typograf.git'
 
 # Use unicorn as the web server
 gem 'unicorn'

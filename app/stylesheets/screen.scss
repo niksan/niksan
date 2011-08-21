@@ -81,11 +81,17 @@ a{
     margin: 0px 0px 0px -360px;
     width: 100%;
     float: left;
+		input[type=text]{
+			border: solid 1px #000;
+      @include border-radius(3px, 3px);
+			behavior: url(/stylesheets/PIE.htc);
+		}
     ul{
       margin: 15px 0px 5px 0px;
       li{
         list-style-type: disc;
         margin: 0px 0px 0px 20px;
+				color: #333;
       }
     }
     .box1{
@@ -125,6 +131,7 @@ a{
         margin: 0px 0px 15px 10px;
         font-family: 'Times new roman';
         border-bottom: dotted 1px;
+				color: #333;
       }
       span.date{
         font-style: italic;
@@ -185,7 +192,18 @@ a{
               text-decoration: underline;
             }
           }
-        }  
+        }
+				#to_portfolio{
+					display: block;
+					margin: 20px 0px 10px 0px;
+					text-align: center;
+					font-size: 14px;
+					color: #6d6d6d;
+					text-decoration: none;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
       }
       #last_in_blog{
         .post{

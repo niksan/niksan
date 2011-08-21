@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/ivanzotov/als_typograf.git
+  revision: a373b6d1b3eb5971aa4738263342c869b791f164
+  specs:
+    als_typograf (0.2.0)
+      activesupport (>= 2.3.4)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -118,6 +125,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  als_typograf!
   capistrano
   compass
   gritter_notices

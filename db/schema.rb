@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110814094035) do
+ActiveRecord::Schema.define(:version => 20110821112926) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
@@ -40,6 +40,16 @@ ActiveRecord::Schema.define(:version => 20110814094035) do
   end
 
   add_index "link_tags", ["tagged_id", "tagged_type"], :name => "index_link_tags_on_tagged_id_and_tagged_type"
+
+  create_table "messages", :force => true do |t|
+    t.string   "theme"
+    t.string   "name"
+    t.string   "email"
+    t.string   "phone"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "portfolio_sites", :force => true do |t|
     t.integer  "portfolio_id"
