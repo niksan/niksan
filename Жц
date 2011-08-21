@@ -1,9 +1,0 @@
-.box3
-  %span.header<
-    Новые сайты:
-  #new_sites
-    - @new_sites.each do |site|
-      %div.site
-        = image_tag site.image.url(:small)
-        = link_to site.name, '/'
-.clear
