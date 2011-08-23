@@ -1,4 +1,4 @@
-/* line 17, ../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../usr/local/rvm/gems/ree-1.8.7-2011.03/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, ../../../../../../usr/local/rvm/gems/ree-1.8.7-2011.03/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, ../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../usr/local/rvm/gems/ree-1.8.7-2011.03/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../usr/local/rvm/gems/ree-1.8.7-2011.03/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../usr/local/rvm/gems/ree-1.8.7-2011.03/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../usr/local/rvm/gems/ree-1.8.7-2011.03/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, ../../../../../../usr/local/rvm/gems/ree-1.8.7-2011.03/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../usr/local/rvm/gems/ree-1.8.7-2011.03/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 115, ../../../../.rvm/gems/ree-1.8.7-2011.03/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 115, ../../../../../../usr/local/rvm/gems/ree-1.8.7-2011.03/gems/compass-0.11.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -175,18 +175,19 @@ a:hover {
   -khtml-border-radius: 3px / 3px;
   border-radius: 3px / 3px;
   behavior: url(/stylesheets/PIE.htc);
+  padding: 2px;
 }
-/* line 89, ../../app/stylesheets/screen.scss */
+/* line 90, ../../app/stylesheets/screen.scss */
 #wrapper #content ul {
   margin: 15px 0px 5px 0px;
 }
-/* line 91, ../../app/stylesheets/screen.scss */
+/* line 92, ../../app/stylesheets/screen.scss */
 #wrapper #content ul li {
   list-style-type: disc;
   margin: 0px 0px 0px 20px;
   color: #333;
 }
-/* line 97, ../../app/stylesheets/screen.scss */
+/* line 98, ../../app/stylesheets/screen.scss */
 #wrapper #content .box1 {
   min-height: 200px;
   margin: 0px 0px 10px 370px;
@@ -201,7 +202,7 @@ a:hover {
   padding: 10px 10px 10px 10px;
   background: #f4faf0;
 }
-/* line 106, ../../app/stylesheets/screen.scss */
+/* line 107, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 {
   min-height: 200px;
   border: solid 1px #d0d0d0;
@@ -218,11 +219,11 @@ a:hover {
   color: #222;
   font-size: 0.9em;
 }
-/* line 116, ../../app/stylesheets/screen.scss */
+/* line 117, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 p {
   margin: 20px 0px 20px 0px;
 }
-/* line 119, ../../app/stylesheets/screen.scss */
+/* line 120, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 h1 {
   font-size: 2.0em;
   margin: 0px 0px 20px 10px;
@@ -231,12 +232,12 @@ a:hover {
   padding: 5px 0px 0px 18px;
   color: #333;
 }
-/* line 126, ../../app/stylesheets/screen.scss */
+/* line 127, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 h1 a {
   color: #333;
   text-decoration: underline;
 }
-/* line 128, ../../app/stylesheets/screen.scss */
+/* line 129, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 h2 {
   display: inline;
   font-size: 1.6em;
@@ -245,16 +246,16 @@ a:hover {
   border-bottom: dotted 1px;
   color: #333;
 }
-/* line 136, ../../app/stylesheets/screen.scss */
+/* line 137, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 span.date {
   font-style: italic;
   font-size: 0.8em;
 }
-/* line 141, ../../app/stylesheets/screen.scss */
+/* line 142, ../../app/stylesheets/screen.scss */
 #wrapper #content #tags {
   margin: 15px 0px 10px 0px;
 }
-/* line 143, ../../app/stylesheets/screen.scss */
+/* line 144, ../../app/stylesheets/screen.scss */
 #wrapper #content #tags a.tag {
   padding: 0px 0px 1px 19px;
   margin: 0px 10px 0px 0px;
@@ -263,17 +264,17 @@ a:hover {
   line-height: 16px;
   color: #555;
 }
-/* line 150, ../../app/stylesheets/screen.scss */
+/* line 151, ../../app/stylesheets/screen.scss */
 #wrapper #content #tags a.tag:hover {
   color: #ff6666;
 }
-/* line 156, ../../app/stylesheets/screen.scss */
+/* line 157, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar {
   float: right;
   width: 340px;
   margin: 0px 10px 0px 0px;
 }
-/* line 160, ../../app/stylesheets/screen.scss */
+/* line 161, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 {
   border: solid 1px #d0d0d0;
   -webkit-border-radius: 6px 6px;
@@ -289,19 +290,19 @@ a:hover {
   margin: 0px 0px 10px 0px;
   padding: 20px 20px 20px 20px;
 }
-/* line 169, ../../app/stylesheets/screen.scss */
+/* line 170, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 span.header {
   display: block;
   margin: 0px 0px 15px 20px;
   color: #6D6D6D;
   font-size: 22px;
 }
-/* line 175, ../../app/stylesheets/screen.scss */
+/* line 176, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 .contacts {
   font-size: 18px;
   line-height: 24px;
 }
-/* line 180, ../../app/stylesheets/screen.scss */
+/* line 181, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #new_sites .site {
   background: #f4f4f4;
   margin: 10px 0px 0px 0px;
@@ -309,18 +310,18 @@ a:hover {
   text-align: center;
   cursor: pointer;
 }
-/* line 186, ../../app/stylesheets/screen.scss */
+/* line 187, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #new_sites .site a {
   font-size: 0.9em;
   display: block;
   margin: 5px 0px 0px 0px;
   color: #1e6db5;
 }
-/* line 191, ../../app/stylesheets/screen.scss */
+/* line 192, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #new_sites .site a:hover {
   text-decoration: underline;
 }
-/* line 196, ../../app/stylesheets/screen.scss */
+/* line 197, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #new_sites #to_portfolio {
   display: block;
   margin: 20px 0px 10px 0px;
@@ -329,11 +330,11 @@ a:hover {
   color: #6d6d6d;
   text-decoration: none;
 }
-/* line 203, ../../app/stylesheets/screen.scss */
+/* line 204, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #new_sites #to_portfolio:hover {
   text-decoration: underline;
 }
-/* line 209, ../../app/stylesheets/screen.scss */
+/* line 208, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #last_in_blog .post {
   color: #6d6d6d;
   background: #f4f4f4;
@@ -343,12 +344,12 @@ a:hover {
   cursor: pointer;
   font-size: 0.7em;
 }
-/* line 217, ../../app/stylesheets/screen.scss */
+/* line 216, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #last_in_blog .post span.date {
   color: #1e6db5;
   font-size: 0.8em;
 }
-/* line 221, ../../app/stylesheets/screen.scss */
+/* line 220, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #last_in_blog .post a {
   display: block;
   margin: 0px 0px 0px 0px;
@@ -357,12 +358,12 @@ a:hover {
   color: #6d6d6d;
   font-size: 1.2em;
 }
-/* line 229, ../../app/stylesheets/screen.scss */
+/* line 228, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #last_in_blog .post p {
   margin: 5px 0px 5px 0px;
 }
 
-/* line 237, ../../app/stylesheets/screen.scss */
+/* line 236, ../../app/stylesheets/screen.scss */
 #footer {
   margin: 20px 0px 0px 0px;
   font-family: 'Verdana';
@@ -371,7 +372,7 @@ a:hover {
   height: 50px;
   background: #e7f3f6;
 }
-/* line 244, ../../app/stylesheets/screen.scss */
+/* line 243, ../../app/stylesheets/screen.scss */
 #footer #copyright {
   float: left;
   width: 200px;
@@ -379,11 +380,11 @@ a:hover {
   color: #323232;
   line-heignt: 12px;
 }
-/* line 250, ../../app/stylesheets/screen.scss */
+/* line 249, ../../app/stylesheets/screen.scss */
 #footer #copyright a {
   color: #323232;
 }
-/* line 254, ../../app/stylesheets/screen.scss */
+/* line 253, ../../app/stylesheets/screen.scss */
 #footer #liveinternet {
   display: block;
   float: right;
