@@ -17,6 +17,7 @@ a{
   width: 100%;
   position: fixed;
   top: 0px;
+  z-index:2;
   #header{
     height: 70px;
     width: 100%;
@@ -52,7 +53,7 @@ a{
           text-align: center;
           text-transform: lowercase;
           text-shadow: 0px 1px 0px #000;
-					behavior: url(/stylesheets/PIE.htc);
+          behavior: url(/stylesheets/PIE.htc);
           padding: 6px 0px 0px 0px;
           width: 113px;
           height: 40px;
@@ -81,18 +82,26 @@ a{
     margin: 0px 0px 0px -360px;
     width: 100%;
     float: left;
-		input[type=text]{
-          border: solid 1px #000;
-          @include border-radius(3px, 3px);
-          behavior: url(/stylesheets/PIE.htc);
-          padding: 2px;
-		}
+    input[type=text]{
+      border: solid 1px #000;
+      @include border-radius(3px, 3px);
+      behavior: url(/stylesheets/PIE.htc);
+      padding: 2px;
+    }
+    textarea{
+      border: solid 1px #000;
+      @include border-radius(3px, 3px);
+      behavior: url(/stylesheets/PIE.htc);
+      padding: 4px;
+    }
     ul{
       margin: 15px 0px 5px 0px;
       li{
         list-style-type: disc;
-        margin: 0px 0px 0px 20px;
-        color: #333;
+        margin: 0px 0px 0px 35px;
+        color: #444;
+        font-size: 14px;
+        font-style: italic;
       }
     }
     .box1{
@@ -123,8 +132,8 @@ a{
         font-family: 'Times new roman';
         background: url('/images/content/h1_bg.jpg') no-repeat left;
         padding: 5px 0px 0px 18px;
-				color: #333;
-				a{ color: #333; text-decoration: underline; }
+        color: #333;
+        a{ color: #333; text-decoration: underline; }
       }
       h2{
         display: inline;
@@ -132,7 +141,7 @@ a{
         margin: 0px 0px 15px 10px;
         font-family: 'Times new roman';
         border-bottom: dotted 1px;
-				color: #333;
+        color: #333;
       }
       span.date{
         font-style: italic;
@@ -151,6 +160,23 @@ a{
         &:hover{
           color: #ff6666;
         }
+      }
+    }
+    #message_form{
+      border: solid 1px #ccc;
+      @include border-radius(3px, 3px);
+      behavior: url(/stylesheets/PIE.htc);
+      padding: 20px 10px 10px 10px;
+      width: 450px;
+      margin: 40px 0px 30px 00px;
+      span.header{
+        display: block;
+        width: 170px;
+        text-align: center;
+        background: #fff;
+        position: absolute;
+        margin: -28px 0px 0px 10px;
+        font-style: italic;
       }
     }
   }
@@ -176,6 +202,20 @@ a{
       .contacts{
         font-size:18px;
         line-height:24px;
+        #order_site{
+          display: block;
+          height: 40px;
+          width: 200px;
+          text-align: center;
+          @include border-radius(4px, 4px);
+          behavior: url(/stylesheets/PIE.htc);
+          background: url('/images/sidebar/contacts/order_site_bg.png') repeat-x;
+          color: #fff;
+          text-decoration: none;
+          font-size: 24px;
+          padding: 10px 0px 0px 0px;
+          margin: 10px 0px 0px 0px;
+        }
       }
       #new_sites{
         .site{
@@ -195,7 +235,7 @@ a{
           }
         }
         #to_portfolio{
-		  display: block;
+          display: block;
           margin: 20px 0px 10px 0px;
           text-align: center;
           font-size: 14px;

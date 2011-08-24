@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
 
-  before_filter :new_sites, :last_posts
+  before_filter :new_sites, :last_posts, :init_meta_tags
   
   protect_from_forgery
 
@@ -12,4 +12,9 @@ class ApplicationController < ActionController::Base
     def last_posts
       @last_posts = Post.limit(4).order('id DESC')
     end
+
+		def init_meta_tags
+			@title = 'NikSan - cоздание, раскрутка сайтов в Воронеже.'
+		end
+
 end
