@@ -6,7 +6,7 @@ class Article < ActiveRecord::Base
 
   validates :title, :presence => true
 
-	typograf :body, :use_p => false, :use_br => false
-	typograf :title, :use_p => false, :use_br => false
+  #typograf :body, :use_p => false, :use_br => false
+  #typograf :title, :use_p => false, :use_br => false
 
 end

@@ -6,7 +6,7 @@ class ContactsMailer < ActionMailer::Base
     @name = message[:name]
     @email = message[:email]
     @phone = message[:phone]
-    @body = message[:body]
+    @msg = message[:body]
     mail(:to => 'info@niksan.ru', :subject => "Сообщение с сайта niksan.ru")
   end
 end
