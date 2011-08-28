@@ -1,0 +1,8 @@
+%h1
+  Блог сайтостроителя
+#posts
+  - @posts.each do |post|
+    .post
+      %h3
+        = link_to post.title, post_path(post)
+      = raw(post.short)

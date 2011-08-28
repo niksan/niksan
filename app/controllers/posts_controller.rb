@@ -1,6 +1,7 @@
-class BlogController < ApplicationController
+class PostsController < ApplicationController
 
   def index
+    @posts = Post.order('date DESC')
   end
 
   def show

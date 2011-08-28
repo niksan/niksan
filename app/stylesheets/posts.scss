@@ -1,0 +1,18 @@
+@import "compass/css3/border-radius";
+
+#posts{
+	.post{
+    margin: 0px 0px 30px 0px;
+    h3{
+      font-size: 22px;
+      display: block;
+      margin: 0px 0px 10px 0px;
+      a{
+        text-decoration: underline;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

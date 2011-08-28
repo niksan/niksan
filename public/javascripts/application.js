@@ -9,6 +9,7 @@ $(document).ready(function(){
     }
   );
   $('#new_sites .site').click( function(){ window.location=$(this).find("a").attr("href"); return false; });
+  $('#last_in_blog .post').click( function(){ window.location=$(this).find("a").attr("href"); return false; });
   $('.site_box').click( function(){ window.location=$(this).find("a").attr("href"); return false; });
 	$('.site_box').hover(
 		function(){
