@@ -80,6 +80,16 @@ a:hover {
 }
 
 /* line 14, ../../app/stylesheets/screen.scss */
+em {
+  font-style: italic;
+}
+
+/* line 17, ../../app/stylesheets/screen.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 20, ../../app/stylesheets/screen.scss */
 #header_wrap {
   min-width: 1500px;
   height: 78px;
@@ -88,41 +98,41 @@ a:hover {
   top: 0px;
   z-index: 2;
 }
-/* line 21, ../../app/stylesheets/screen.scss */
+/* line 27, ../../app/stylesheets/screen.scss */
 #header_wrap #header {
   height: 70px;
   width: 100%;
   background: #112a48 url(/images/header/bg.jpg) repeat-x;
 }
-/* line 25, ../../app/stylesheets/screen.scss */
+/* line 31, ../../app/stylesheets/screen.scss */
 #header_wrap #header a {
   display: block;
   float: left;
 }
-/* line 28, ../../app/stylesheets/screen.scss */
+/* line 34, ../../app/stylesheets/screen.scss */
 #header_wrap #header a img#logo {
   display: block;
   margin: 20px 0px 0px 15px;
 }
-/* line 33, ../../app/stylesheets/screen.scss */
+/* line 39, ../../app/stylesheets/screen.scss */
 #header_wrap #header img#website_development {
   display: block;
   float: left;
   margin: 15px 0px 0px 15px;
 }
-/* line 38, ../../app/stylesheets/screen.scss */
+/* line 44, ../../app/stylesheets/screen.scss */
 #header_wrap #header ul#main_menu {
   float: left;
   margin: 0px 0px 0px 40px;
 }
-/* line 41, ../../app/stylesheets/screen.scss */
+/* line 47, ../../app/stylesheets/screen.scss */
 #header_wrap #header ul#main_menu li {
   display: block;
   height: 70px;
   float: left;
   margin: 20px 0px 0px 0px;
 }
-/* line 46, ../../app/stylesheets/screen.scss */
+/* line 52, ../../app/stylesheets/screen.scss */
 #header_wrap #header ul#main_menu li a {
   display: block;
   font-size: 16px;
@@ -138,35 +148,35 @@ a:hover {
   width: 113px;
   height: 40px;
 }
-/* line 60, ../../app/stylesheets/screen.scss */
+/* line 66, ../../app/stylesheets/screen.scss */
 #header_wrap #header ul#main_menu li a:hover {
   background: url("/images/header/menu_button_bg.png") no-repeat top;
   color: #fff;
 }
-/* line 65, ../../app/stylesheets/screen.scss */
+/* line 71, ../../app/stylesheets/screen.scss */
 #header_wrap #header ul#main_menu li a.active {
   background: url("/images/header/menu_button_bg.png") no-repeat top;
   color: #fff;
 }
-/* line 72, ../../app/stylesheets/screen.scss */
+/* line 78, ../../app/stylesheets/screen.scss */
 #header_wrap .bottom_line {
   height: 8px;
   background: url("/images/header/line_bg.png");
 }
 
-/* line 77, ../../app/stylesheets/screen.scss */
+/* line 83, ../../app/stylesheets/screen.scss */
 #wrapper {
   margin: 85px 0px 0px 0px;
   font-family: 'Arial';
   color: #333;
 }
-/* line 81, ../../app/stylesheets/screen.scss */
+/* line 87, ../../app/stylesheets/screen.scss */
 #wrapper #content {
   margin: 0px 0px 0px -360px;
   width: 100%;
   float: left;
 }
-/* line 85, ../../app/stylesheets/screen.scss */
+/* line 91, ../../app/stylesheets/screen.scss */
 #wrapper #content input[type=text] {
   border: solid 1px #000;
   -webkit-border-radius: 3px 3px;
@@ -178,7 +188,7 @@ a:hover {
   behavior: url(/stylesheets/PIE.htc);
   padding: 2px;
 }
-/* line 91, ../../app/stylesheets/screen.scss */
+/* line 97, ../../app/stylesheets/screen.scss */
 #wrapper #content textarea {
   border: solid 1px #000;
   -webkit-border-radius: 3px 3px;
@@ -190,11 +200,11 @@ a:hover {
   behavior: url(/stylesheets/PIE.htc);
   padding: 4px;
 }
-/* line 97, ../../app/stylesheets/screen.scss */
+/* line 103, ../../app/stylesheets/screen.scss */
 #wrapper #content ul {
   margin: 15px 0px 5px 0px;
 }
-/* line 99, ../../app/stylesheets/screen.scss */
+/* line 105, ../../app/stylesheets/screen.scss */
 #wrapper #content ul li {
   list-style-type: disc;
   margin: 0px 0px 0px 35px;
@@ -202,7 +212,7 @@ a:hover {
   font-size: 14px;
   font-style: italic;
 }
-/* line 107, ../../app/stylesheets/screen.scss */
+/* line 113, ../../app/stylesheets/screen.scss */
 #wrapper #content .box1 {
   min-height: 200px;
   margin: 0px 0px 10px 370px;
@@ -217,7 +227,7 @@ a:hover {
   padding: 10px 10px 10px 10px;
   background: #f4faf0;
 }
-/* line 116, ../../app/stylesheets/screen.scss */
+/* line 122, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 {
   min-height: 200px;
   border: solid 1px #d0d0d0;
@@ -234,11 +244,11 @@ a:hover {
   color: #222;
   font-size: 0.9em;
 }
-/* line 126, ../../app/stylesheets/screen.scss */
+/* line 132, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 p {
   margin: 20px 0px 20px 0px;
 }
-/* line 129, ../../app/stylesheets/screen.scss */
+/* line 135, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 h1 {
   font-size: 2.0em;
   margin: 0px 0px 20px 10px;
@@ -247,12 +257,12 @@ a:hover {
   padding: 5px 0px 0px 18px;
   color: #333;
 }
-/* line 136, ../../app/stylesheets/screen.scss */
+/* line 142, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 h1 a {
   color: #333;
   text-decoration: underline;
 }
-/* line 138, ../../app/stylesheets/screen.scss */
+/* line 144, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 h2 {
   display: inline;
   font-size: 1.6em;
@@ -261,16 +271,16 @@ a:hover {
   border-bottom: dotted 1px;
   color: #333;
 }
-/* line 146, ../../app/stylesheets/screen.scss */
+/* line 152, ../../app/stylesheets/screen.scss */
 #wrapper #content .box2 span.date {
   font-style: italic;
   font-size: 0.8em;
 }
-/* line 151, ../../app/stylesheets/screen.scss */
+/* line 157, ../../app/stylesheets/screen.scss */
 #wrapper #content #tags {
   margin: 15px 0px 10px 0px;
 }
-/* line 153, ../../app/stylesheets/screen.scss */
+/* line 159, ../../app/stylesheets/screen.scss */
 #wrapper #content #tags a.tag {
   padding: 0px 0px 1px 19px;
   margin: 0px 10px 0px 0px;
@@ -279,11 +289,11 @@ a:hover {
   line-height: 16px;
   color: #555;
 }
-/* line 160, ../../app/stylesheets/screen.scss */
+/* line 166, ../../app/stylesheets/screen.scss */
 #wrapper #content #tags a.tag:hover {
   color: #ff6666;
 }
-/* line 165, ../../app/stylesheets/screen.scss */
+/* line 171, ../../app/stylesheets/screen.scss */
 #wrapper #content #message_form {
   border: solid 1px #ccc;
   -webkit-border-radius: 3px 3px;
@@ -297,7 +307,7 @@ a:hover {
   width: 450px;
   margin: 40px 0px 30px 00px;
 }
-/* line 172, ../../app/stylesheets/screen.scss */
+/* line 178, ../../app/stylesheets/screen.scss */
 #wrapper #content #message_form span.header {
   display: block;
   width: 170px;
@@ -307,13 +317,13 @@ a:hover {
   margin: -28px 0px 0px 10px;
   font-style: italic;
 }
-/* line 183, ../../app/stylesheets/screen.scss */
+/* line 189, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar {
   float: right;
   width: 340px;
   margin: 0px 10px 0px 0px;
 }
-/* line 187, ../../app/stylesheets/screen.scss */
+/* line 193, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 {
   border: solid 1px #d0d0d0;
   -webkit-border-radius: 6px 6px;
@@ -329,19 +339,19 @@ a:hover {
   margin: 0px 0px 10px 0px;
   padding: 20px 20px 20px 20px;
 }
-/* line 196, ../../app/stylesheets/screen.scss */
+/* line 202, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 span.header {
   display: block;
   margin: 0px 0px 15px 20px;
   color: #6D6D6D;
   font-size: 22px;
 }
-/* line 202, ../../app/stylesheets/screen.scss */
+/* line 208, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 .contacts {
   font-size: 18px;
   line-height: 24px;
 }
-/* line 205, ../../app/stylesheets/screen.scss */
+/* line 211, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 .contacts #order_site {
   display: block;
   height: 40px;
@@ -361,7 +371,7 @@ a:hover {
   padding: 10px 0px 0px 0px;
   margin: 10px 0px 0px 0px;
 }
-/* line 221, ../../app/stylesheets/screen.scss */
+/* line 227, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #new_sites .site {
   background: #f4f4f4;
   margin: 10px 0px 0px 0px;
@@ -369,18 +379,18 @@ a:hover {
   text-align: center;
   cursor: pointer;
 }
-/* line 227, ../../app/stylesheets/screen.scss */
+/* line 233, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #new_sites .site a {
   font-size: 0.9em;
   display: block;
   margin: 5px 0px 0px 0px;
   color: #1e6db5;
 }
-/* line 232, ../../app/stylesheets/screen.scss */
+/* line 238, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #new_sites .site a:hover {
   text-decoration: underline;
 }
-/* line 237, ../../app/stylesheets/screen.scss */
+/* line 243, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #new_sites #to_portfolio {
   display: block;
   margin: 20px 0px 10px 0px;
@@ -389,11 +399,11 @@ a:hover {
   color: #6d6d6d;
   text-decoration: none;
 }
-/* line 244, ../../app/stylesheets/screen.scss */
+/* line 250, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #new_sites #to_portfolio:hover {
   text-decoration: underline;
 }
-/* line 248, ../../app/stylesheets/screen.scss */
+/* line 254, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #last_in_blog .post {
   color: #6d6d6d;
   background: #f4f4f4;
@@ -403,12 +413,12 @@ a:hover {
   cursor: pointer;
   font-size: 0.7em;
 }
-/* line 256, ../../app/stylesheets/screen.scss */
+/* line 262, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #last_in_blog .post span.date {
   color: #1e6db5;
   font-size: 0.8em;
 }
-/* line 260, ../../app/stylesheets/screen.scss */
+/* line 266, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #last_in_blog .post a {
   display: block;
   margin: 0px 0px 0px 0px;
@@ -417,12 +427,12 @@ a:hover {
   color: #6d6d6d;
   font-size: 1.2em;
 }
-/* line 268, ../../app/stylesheets/screen.scss */
+/* line 274, ../../app/stylesheets/screen.scss */
 #wrapper #sidebar .box3 #last_in_blog .post p {
   margin: 5px 0px 5px 0px;
 }
 
-/* line 276, ../../app/stylesheets/screen.scss */
+/* line 282, ../../app/stylesheets/screen.scss */
 #footer {
   margin: 20px 0px 0px 0px;
   font-family: 'Verdana';
@@ -431,7 +441,7 @@ a:hover {
   height: 50px;
   background: #e7f3f6;
 }
-/* line 283, ../../app/stylesheets/screen.scss */
+/* line 289, ../../app/stylesheets/screen.scss */
 #footer #copyright {
   float: left;
   width: 200px;
@@ -439,11 +449,11 @@ a:hover {
   color: #323232;
   line-heignt: 12px;
 }
-/* line 289, ../../app/stylesheets/screen.scss */
+/* line 295, ../../app/stylesheets/screen.scss */
 #footer #copyright a {
   color: #323232;
 }
-/* line 293, ../../app/stylesheets/screen.scss */
+/* line 299, ../../app/stylesheets/screen.scss */
 #footer #liveinternet {
   display: block;
   float: right;
