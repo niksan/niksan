@@ -32,7 +32,7 @@ strong{
   #header{
     height: 70px;
     width: 100%;
-    background: #112a48 url(/images/header/bg.jpg) repeat-x;
+    background: #112a48 image_url('header/bg.jpg') repeat-x;
     a{
       display: block;
       float: left;
@@ -64,17 +64,17 @@ strong{
           text-align: center;
           text-transform: lowercase;
           text-shadow: 0px 1px 0px #000;
-          behavior: url(/stylesheets/PIE.htc);
+          behavior: stylesheet_url('PIE.htc');
           padding: 6px 0px 0px 0px;
           width: 113px;
           height: 40px;
           &:hover{
-            background: url('/images/header/menu_button_bg.png') no-repeat top;
+            background: image_url('header/menu_button_bg.png') no-repeat top;
             color: #fff;
           }
         }
         a.active{
-          background: url('/images/header/menu_button_bg.png') no-repeat top;
+          background: image_url('header/menu_button_bg.png') no-repeat top;
           color: #fff;
         }
       }
@@ -82,7 +82,7 @@ strong{
   } 
   .bottom_line{
     height: 8px;
-    background: url('/images/header/line_bg.png');
+    background: image_url('header/line_bg.png');
   }
 }
 #wrapper{
@@ -96,13 +96,13 @@ strong{
     input[type=text]{
       border: solid 1px #000;
       @include border-radius(3px, 3px);
-      behavior: url(/stylesheets/PIE.htc);
+      behavior: stylesheet_url('PIE.htc');
       padding: 2px;
     }
     textarea{
       border: solid 1px #000;
       @include border-radius(3px, 3px);
-      behavior: url(/stylesheets/PIE.htc);
+      behavior: stylesheet_url('PIE.htc');
       padding: 4px;
     }
     ul{
@@ -120,7 +120,7 @@ strong{
       margin: 0px 0px 10px 370px;
       border: solid 1px #d0d0d0;
       @include border-radius(6px, 6px);
-      behavior: url(/stylesheets/PIE.htc);
+      behavior: stylesheet_url('PIE.htc');
       padding: 10px 10px 10px 10px;
       background: #f4faf0;
     }
@@ -128,7 +128,7 @@ strong{
       min-height: 200px;
       border: solid 1px #d0d0d0;
       @include border-radius(6px, 6px);
-      behavior: url(/stylesheets/PIE.htc);
+      behavior: stylesheet_url('PIE.htc');
       padding: 10px 10px 10px 10px;
       background: #fff;
       margin: 0px 0px 0px 370px;
@@ -141,7 +141,7 @@ strong{
         font-size: 2.0em;
         margin: 0px 0px 20px 10px;
         font-family: 'Times new roman';
-        background: url('/images/content/h1_bg.jpg') no-repeat left;
+        background: image_url('content/h1_bg.jpg') no-repeat left;
         padding: 5px 0px 0px 18px;
         color: #333;
         a{ color: #333; text-decoration: underline; }
@@ -164,7 +164,7 @@ strong{
       a.tag{
         padding: 0px 0px 1px 19px;
         margin: 0px 10px 0px 0px;
-        background: url('/images/icons/tag.gif') no-repeat top left;
+        background: image_url('icons/tag.gif') no-repeat top left;
         font-size: 0.9em;
         line-height: 16px;
         color: #555;
@@ -176,7 +176,7 @@ strong{
     #message_form{
       border: solid 1px #ccc;
       @include border-radius(3px, 3px);
-      behavior: url(/stylesheets/PIE.htc);
+      behavior: stylesheet_url('PIE.htc');
       padding: 20px 10px 10px 10px;
       width: 450px;
       margin: 40px 0px 30px 00px;
@@ -198,7 +198,7 @@ strong{
     .box3{
       border: solid 1px #d0d0d0;
       @include border-radius(6px, 6px);
-      behavior: url(/stylesheets/PIE.htc);
+      behavior: stylesheet_url('PIE.htc');
       background: #e8e8e8;
       min-height: 50px;
       width: 300px;;
@@ -219,8 +219,8 @@ strong{
           width: 200px;
           text-align: center;
           @include border-radius(4px, 4px);
-          behavior: url(/stylesheets/PIE.htc);
-          background: url('/images/sidebar/contacts/order_site_bg.png') repeat-x;
+          behavior: stylesheet_url('PIE.htc');
+          background: image_url('sidebar/contacts/order_site_bg.png') repeat-x;
           color: #fff;
           text-decoration: none;
           font-size: 24px;

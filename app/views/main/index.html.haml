@@ -2,15 +2,15 @@
   #buttons_menu
     .wrapper
       .button
-        %img{ :src => '/pictures/site_create.png', :alt => 'Разработка сайта' }
+        = image_tag 'site_create.png', :alt => 'Разработка сайта'
         = link_to 'Создание сайтов', article_path(2)
     .wrapper
       .button
-        %img{ :src => '/pictures/site_pr.png', :alt => 'Разработка сайта' }
+        = image_tag 'site_pr.png', :alt => 'Раскрутка сайта'
         = link_to 'Раскрутка сайтов', article_path(3)
     .wrapper
       .button
-        %img{ :src => '/pictures/site_support.png', :alt => 'Разработка сайта' }
+        = image_tag 'site_support.png', :alt => 'Поддержка сайта'
         = link_to 'Поддержка сайтов', article_path(4)
   .clear
 .box2

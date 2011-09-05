@@ -1,8 +1,8 @@
 #header_wrap
   #header
     %a{ :href => '/' }
-      %img#logo{ :src => '/images/header/logo.png', :alt => 'NikSan' }
-    %img#website_development{ :src => '/images/header/website_development.png', :alt => 'website development' }
+      = image_tag('header/logo.png', :alt => 'NikSan', :id => 'logo')
+    = image_tag('header/website_development.png', :alt => 'website development', :id =>'website_development')
     %ul#main_menu
       %li<
         - id = ( controller_name == 'main' ) ? 'act_button' : nil

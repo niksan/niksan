@@ -10,7 +10,7 @@
 		border: solid 1px #b3b3b3;
 		float: left;
 		@include border-radius(4px, 4px);
-		behavior: url(/stylesheets/PIE.htc);
+		behavior: stylesheet_url('PIE.htc');
 		.site_thumb{
 			margin: 2px auto 10px auto;
 			width: 170px;
@@ -27,7 +27,7 @@
 	.active{
 		border: solid 1px #6d6d6d;
 		box-shadow: 0px 0px 5px #6d6d6d;
-		behavior: url(/stylesheets/PIE.htc);
+		behavior: stylesheet_url('PIE.htc');
 	}
 }
 img.small_site_img{

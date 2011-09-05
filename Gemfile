@@ -10,6 +10,8 @@ gem 'haml'
 gem 'paperclip'
 gem 'typus'
 gem 'gritter_notices'
+gem 'execjs'
+gem 'therubyracer'
 
 group :assets do
   gem 'sass-rails', "  ~> 3.1.0"
