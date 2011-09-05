@@ -1,18 +1,23 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.9'
+gem 'rails', '3.1.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2', '0.2.7'
+gem 'mysql2'
 gem 'haml'
-gem 'sass'
-gem 'compass'
+gem 'compass', :git => 'https://github.com/chriseppstein/compass.git', :branch => 'rails31'
 gem 'paperclip'
 gem 'typus'
 gem 'gritter_notices'
-gem 'als_typograf', :git => 'git://github.com/ivanzotov/als_typograf.git'
+gem 'jquery-rails'
+
+group :assets do
+  gem 'sass-rails', "  ~> 3.1.0"
+  gem 'coffee-rails', "~> 3.1.0"
+  gem 'uglifier'
+end
 
 # Use unicorn as the web server
 gem 'unicorn'
