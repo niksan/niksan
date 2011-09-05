@@ -7,11 +7,17 @@ gem 'rails', '3.1.0'
 
 gem 'mysql2'
 gem 'haml'
-gem 'compass'
 gem 'paperclip'
-gem 'sass'
 gem 'typus'
 gem 'gritter_notices'
+
+group :assets do
+  gem 'sass-rails', "  ~> 3.1.0"
+  gem 'coffee-rails', "~> 3.1.0"
+  gem 'uglifier'
+  gem 'compass', :git => 'https://github.com/chriseppstein/compass.git', :branch => 'rails31'
+end
+
 gem 'jquery-rails'
 
 

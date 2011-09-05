@@ -1,3 +1,7 @@
+//= require jquery
+//= require_self
+//= require_tree ./gritter
+
 $(document).ready(function(){
   $('#act_button').addClass('active');
   $('ul#main_menu a').hover(

@@ -50,7 +50,8 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: niksan_niksan83
+  database: niksan_development
   pool: 5
-  username: niksan_niksan83
-  password: wRpkKV68
+  username: root
+  password: 
+  socket: /var/run/mysqld/mysqld.sock

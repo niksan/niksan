@@ -26,5 +26,8 @@ Niksan2::Application.configure do
   Paperclip.options[:command_path] = "/usr/bin/"
   Paperclip.options[:image_magick_path] = '/usr/bin/'
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  
+  config.assets.compress = true
+  config.assets.debug = true
 end
 
