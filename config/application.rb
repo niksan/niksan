@@ -7,6 +7,8 @@ if defined?(Bundler)
   Bundler.require *Rails.groups(:assets => %w(development test))
 end
 
+Haml::Template.options[:ugly] = false
+
 module Niksan2
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -41,7 +43,6 @@ module Niksan2
     config.filter_parameters += [:password]
 
     config.assets.enabled = true
-    config.assets.version = '1.0'
 
 
   end
