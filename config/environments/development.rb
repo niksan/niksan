@@ -28,6 +28,7 @@ Niksan2::Application.configure do
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   
   config.assets.compress = true
+  config.assets.compile = true
   config.assets.debug = true
 end
 

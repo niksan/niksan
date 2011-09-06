@@ -43,7 +43,6 @@ module Niksan2
     config.assets.enabled = true
     config.assets.version = '1.0'
 
-    config.assets.precompile = %w(*.png *.jp?g *.gif application.css application.js)
 
   end
 end
