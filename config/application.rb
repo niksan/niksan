@@ -44,6 +44,6 @@ module Niksan2
 
     config.assets.enabled = true
 
-
+    #config.assets.precompile = [ /\w+\.(?!js|css).+/, "application.js", "application.css" ]
   end
 end
