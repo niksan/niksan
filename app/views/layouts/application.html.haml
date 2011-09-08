@@ -9,6 +9,7 @@
 		= stylesheet_link_tag 'sites', :media => 'screen, projection' if controller_name == 'sites'
 		= stylesheet_link_tag 'posts', :media => 'screen, projection' if controller_name == 'posts'
 		= javascript_include_tag 'application'
+		= javascript_include_tag 'main' if controller_name == 'main'
 		= csrf_meta_tag
 	%body
 		= gflash
