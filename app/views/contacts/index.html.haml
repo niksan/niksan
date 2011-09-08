@@ -5,34 +5,26 @@
   %span.header
     Отправка сообщения:
   = form_for :message do |f|
-    %table
-      %tbody
-        %tr
-          %td<
-            = f.label :name, 'Имя: '
-          %td<
-            = f.text_field :name
-        %tr
-          %td<
-            = f.label :email, 'E-mail: '
-          %td<
-            = f.text_field :email
-        %tr
-          %td<
-            = f.label :phone, 'Телефон: '
-          %td<
-            = f.text_field :phone
-        %tr
-          %td<
-            = f.label :theme, 'Тема: '
-          %td<
-            = f.text_field :theme
-        %tr
-          %td<
-            = f.label :body, 'Сообщение: '
-          %td<
-            = f.text_area :body	
-        %tr
-          %td
-          %td
-            = f.submit 'Отправить'
+    %fieldset
+      .clearfix
+        = f.label :name, 'Имя: '
+        .input
+          = f.text_field :name
+      .clearfix
+        = f.label :email, 'E-mail: '
+        .input
+          = f.text_field :email
+      .clearfix
+        = f.label :phone, 'Телефон: '
+        .input
+          = f.text_field :phone
+      .clearfix
+        = f.label :theme, 'Тема: '
+        .input
+          = f.text_field :theme
+      .clearfix
+        = f.label :body, 'Сообщение: '
+        .input
+          = f.text_area :body 
+    .actions
+      = f.submit 'Отправить', :class => 'btn primary'
