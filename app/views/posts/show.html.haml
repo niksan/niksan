@@ -1,5 +1,7 @@
 %h1
-  = link_to 'Блог сайтостроителя', posts_path
+  Блог
+%h2
+  = link_to @post.blog.name, posts_path
   &rarr;
   = @post.title
 %p
