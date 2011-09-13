@@ -1,12 +1,11 @@
 class PostsController < ApplicationController
 
   def index
-    @posts = Post.includes(:blog).order('date DESC')
+    redirect_to blog_path(params[:blog_id]), :status => 301
   end
 
   def show
     @post = Post.find(params[:id])
-    @tags = @post.tags
   end
 
 end

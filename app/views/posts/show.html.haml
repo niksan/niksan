@@ -1,9 +1,11 @@
 %h1
-  = link_to @post.blog.name, posts_path
-  &rarr;
   = @post.title
+.select_blog_part
+  = link_to 'Блог', blog_index_path
+  &rarr;
+  = link_to @post.blog.name, blog_path(@post.blog)
 %p
   %span.date
     = l @post.date, :format => :short_date
 = raw(@post.body)
-= render 'shared/tags'
+= render :partial =>'shared/tags', :locals => { :tags => @post.tags }

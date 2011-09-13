@@ -1,2 +1,10 @@
 %h1
-	Блог сайтостроителя
+  Блог
+#posts
+  - @posts.each do |post|
+    .post
+      %h3
+        = link_to post.blog.name, blog_path(post.blog)
+        &rarr;
+        = link_to post.title, blog_post_path(post.blog, post)
+      = raw(post.short)

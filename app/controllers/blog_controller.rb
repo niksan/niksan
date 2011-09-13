@@ -1,11 +1,12 @@
 class BlogController < ApplicationController
 
   def index
+    @posts = Post.includes(:blog, :tags).order('date')
   end
 
   def show
-    @post = Post.find(params[:id])
-    @tags = @post.tags
+    @blog = Blog.find(params[:id])
+    @posts = Post.where('blog_id = ?', @blog.id).includes(:tags).order('date')
   end
 
 end

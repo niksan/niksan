@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
     end
 
     def last_posts
-      @last_posts = Post.limit(4).order('id DESC')
+      @last_posts = Post.includes(:blog).limit(4).order('id DESC')
     end
 
 		def init_meta_tags

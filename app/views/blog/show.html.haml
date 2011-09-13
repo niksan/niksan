@@ -1,7 +1,10 @@
 %h1
-  = @post.title
-%p
-  %span.date
-    = l @post.date, :format => :short_date
-= raw(@post.body)
-= render 'shared/tags'
+  = link_to 'Блог', blog_index_path
+  &rarr;
+  = @blog.name
+#posts
+  - @posts.each do |post|
+    .post
+      %h3
+        = link_to post.title, blog_post_path(@blog, post)
+      = raw(post.short)
