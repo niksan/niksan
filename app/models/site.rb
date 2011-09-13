@@ -1,5 +1,5 @@
 class Site < ActiveRecord::Base
-  has_many :portfolio_sites
+  has_many :portfolio_sites, :dependent => :destroy
   has_many :portfolios, :through => :portfolio_sites
 
   validates :name, :presence => true
