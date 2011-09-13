@@ -13,8 +13,8 @@ class ApplicationController < ActionController::Base
       @last_posts = Post.includes(:blog).limit(4).order('id DESC')
     end
 
-		def init_meta_tags
-			@title = 'NikSan - cоздание, раскрутка сайтов в Воронеже.'
-		end
+    def init_meta_tags
+      @title = 'NikSan - cоздание, раскрутка сайтов в Воронеже.'
+    end
 
 end
