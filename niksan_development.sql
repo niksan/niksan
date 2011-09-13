@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Сен 13 2011 г., 15:17
+-- Время создания: Сен 13 2011 г., 15:50
 -- Версия сервера: 5.1.54
 -- Версия PHP: 5.3.5-1ubuntu7.2
 
@@ -161,12 +161,15 @@ CREATE TABLE IF NOT EXISTS `portfolios` (
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Дамп данных таблицы `portfolios`
 --
 
+INSERT INTO `portfolios` (`id`, `name`, `description`, `image_file_name`, `image_content_type`, `image_file_size`, `image_updated_at`, `created_at`, `updated_at`) VALUES
+(1, 'создание сайта', NULL, NULL, NULL, NULL, NULL, '2011-09-13 11:36:16', '2011-09-13 11:36:16'),
+(2, 'раскрутка сайта', NULL, NULL, NULL, NULL, NULL, '2011-09-13 11:36:30', '2011-09-13 11:36:30');
 
 -- --------------------------------------------------------
 
@@ -212,7 +215,7 @@ CREATE TABLE IF NOT EXISTS `posts` (
 --
 
 INSERT INTO `posts` (`id`, `title`, `short`, `body`, `created_at`, `updated_at`, `date`, `blog_id`) VALUES
-(1, 'Новая версия сайта', 'Готова и опубликована новая версия сайта http://niksan.ru', 'Готова и опубликована новая версия сайта http://niksan.ru', '2011-09-12 10:07:55', '2011-09-12 10:33:26', '2011-08-25 20:00:00', 1);
+(1, 'Новая версия сайта', 'Готова и опубликована новая версия сайта http://niksan.ru', 'Готова и опубликована новая версия сайта <a href=''http://niksan.ru''>http://niksan.ru</a>', '2011-09-12 10:07:55', '2011-09-13 11:19:45', '2011-08-25 20:00:00', 1);
 
 -- --------------------------------------------------------
 
