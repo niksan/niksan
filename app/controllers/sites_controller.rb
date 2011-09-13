@@ -1,7 +1,7 @@
 class SitesController < ApplicationController
 
   def index
-		@sites = Site.order('date DESC')
+		redirect_to portfolio_index_path, :status => 301
   end
 
   def show

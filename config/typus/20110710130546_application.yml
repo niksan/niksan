@@ -24,20 +24,20 @@ LinkTag:
 
 Portfolio:
   fields:
-    default: name, description, image_file_name
-    form: name, description, image_file_name
+    default: name, description, image
+    form: name, description, image
   order_by: 
-  relationships: portfolio_sites, sites
+  relationships: sites
   filters: created_at
   search: name
   application: niksan2
 
 PortfolioSite:
   fields:
-    default: portfolio_id, site_id, site, portfolio
-    form: portfolio_id, site_id, site, portfolio
+    default: portfolio, site
+    form: portfolio, site
   order_by: 
-  relationships: portfolio, site
+  relationships:
   filters: created_at
   search: 
   application: niksan2
@@ -57,7 +57,7 @@ Site:
     default: image, name, url
     form: name, url, description, date, image
   order_by: date
-  relationships: portfolio_sites, portfolios
+  relationships: portfolios
   filters: created_at
   search: name
   application: niksan2

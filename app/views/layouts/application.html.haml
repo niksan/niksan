@@ -6,7 +6,7 @@
 		%link{ :rel => 'shortcut icon', :href => '/favicon.ico', :type => 'image/x-icon' }
 		= stylesheet_link_tag 'application', :media => 'screen, projection'
 		= stylesheet_link_tag 'main', :media => 'screen, projection' if controller_name == 'main'
-		= stylesheet_link_tag 'sites', :media => 'screen, projection' if controller_name == 'sites'
+		= stylesheet_link_tag 'portfolio', :media => 'screen, projection' if controller_name == 'portfolio' || 'sites'
 		= stylesheet_link_tag 'blog', :media => 'screen, projection' if controller_name == 'blog' || 'posts'
 		= javascript_include_tag 'application'
 		= javascript_include_tag 'main' if controller_name == 'main'
