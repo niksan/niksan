@@ -24,5 +24,4 @@ $(document).ready(function(){
 			$(this).removeClass('active');
 		}
 	);
-  $('#source').quicksand( $('#destination li') );
 });
