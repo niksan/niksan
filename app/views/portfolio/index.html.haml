@@ -5,6 +5,4 @@
     .site_box
       .site_thumb
         = image_tag site.image.url(:thumb), :alt => site.name
-      - @classes = []
-      - site.portfolios.each{ |p| @classes << 'portfolio' + p.id.to_s }
-      = link_to site.name, site_path(site), :class => 'site_name ' + @classes.join(' ')
+      = link_to site.name, site_path(site), :class => 'site_name ' + site.portfolios.collect{ |p| 'portfolio' + p.id.to_s }.join(' ')
