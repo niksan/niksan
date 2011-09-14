@@ -1,11 +1,20 @@
 Typus.setup do |config|
 
   # Application name.
-  config.admin_title = "NikSan"
+  # config.admin_title = "Typus"
   # config.admin_sub_title = ""
 
   # When mailer_sender is set, password recover is enabled. This email
   # address will be used in Admin::Mailer.
+  #
+  # Remember to setup the default url options for your specific environment
+  # Here is an example of development environment:
+  #
+  #     config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  #
+  # This is a required Rails configuration. In production it must be the actual
+  # actual host of your application.
+  #
   # config.mailer_sender = "admin@example.com"
 
   # Define paperclip attachment styles.
@@ -14,15 +23,13 @@ Typus.setup do |config|
 
   # Authentication: +:none+, +:http_basic+
   # Run `rails g typus:migration` if you need an advanced authentication system.
-  config.authentication = :http_basic
+  # config.authentication = :none
 
-  # Define username and password for +:http_basic+ authentication
-  config.username = "admin"
-  config.password = "860827"
+  # Define username and password for +:http_basic+ authentication.
+  # config.username = "admin"
+  # config.password = "columbia"
 
-  # Pagination options:
-  # These options are passed to `will_paginate`. You can see the available
-  # options in the plugin source. (https://github.com/mislav/will_paginate/blob/rails3/lib/will_paginate/view_helpers.rb)
+  # Pagination options: These options are passed to `kaminari`.
   # config.pagination = { :previous_label => "&larr; " + Typus::I18n.t("Previous"),
   #                       :next_label => Typus::I18n.t("Next") + " &rarr;" }
 

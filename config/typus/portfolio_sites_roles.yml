@@ -1,0 +1,4 @@
+# Use the README file as a reference to customize settings.
+
+admin:
+  PortfolioSite: create, read, update, delete

@@ -1,0 +1,8 @@
+# Use the README file as a reference to customize settings.
+
+SiteTechnology:
+  fields:
+    default: site_id, technology_id
+    form: site_id, technology_id
+  relationships: 
+  application: Application

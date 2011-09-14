@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class Admin::PortfoliosControllerTest < ActionController::TestCase
+class SiteTechnologyTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

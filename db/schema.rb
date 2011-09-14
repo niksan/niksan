@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110912102942) do
+ActiveRecord::Schema.define(:version => 20110914162041) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
@@ -87,6 +87,13 @@ ActiveRecord::Schema.define(:version => 20110912102942) do
     t.integer  "blog_id"
   end
 
+  create_table "site_technologies", :force => true do |t|
+    t.integer  "site_id"
+    t.integer  "technology_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "sites", :force => true do |t|
     t.string   "name"
     t.text     "description"
@@ -98,6 +105,8 @@ ActiveRecord::Schema.define(:version => 20110912102942) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.datetime "date"
+    t.text     "task"
+    t.text     "solution"
   end
 
   create_table "tags", :force => true do |t|
@@ -105,6 +114,12 @@ ActiveRecord::Schema.define(:version => 20110912102942) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "link_tags_count"
+  end
+
+  create_table "technologies", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

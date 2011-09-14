@@ -1,0 +1,8 @@
+# Use the README file as a reference to customize settings.
+
+LinkTag:
+  fields:
+    default: tag_id, tagged_id
+    form: tag_id, tagged_id
+  relationships: 
+  application: Application

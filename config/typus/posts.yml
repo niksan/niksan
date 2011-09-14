@@ -1,0 +1,8 @@
+# Use the README file as a reference to customize settings.
+
+Post:
+  fields:
+    default: title, short, body, date, blog_id
+    form: title, short, body, date, blog_id
+  relationships: tags, link_tags
+  application: Application
