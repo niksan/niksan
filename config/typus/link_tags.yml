@@ -2,7 +2,7 @@
 
 LinkTag:
   fields:
-    default: tag_id, tagged_id
-    form: tag_id, tagged_id
+    default: tag, tagged_id, tagged_type
+    form: tag, tagged_id, tagged_type
   relationships: 
   application: Application

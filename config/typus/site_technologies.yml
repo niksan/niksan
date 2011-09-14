@@ -2,7 +2,7 @@
 
 SiteTechnology:
   fields:
-    default: site_id, technology_id
-    form: site_id, technology_id
+    default: site, technology
+    form: site, technology
   relationships: 
   application: Application
