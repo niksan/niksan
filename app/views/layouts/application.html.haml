@@ -10,6 +10,7 @@
 		= stylesheet_link_tag 'blog', :media => 'screen, projection' if controller_name == 'blog' || 'posts'
 		= javascript_include_tag 'application'
 		= javascript_include_tag 'main' if controller_name == 'main'
+		= javascript_include_tag 'jquery.quicksand' if controller_name == 'portfolio'
 		= csrf_meta_tag
 	%body
 		= gflash

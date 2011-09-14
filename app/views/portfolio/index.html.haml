@@ -1,8 +1,17 @@
 %h1
   Портфолио
-#sites
+%ul#portfolios
+  - all = Portfolio.all.collect{ |p| 'portfolio' + p.id.to_s }.join(' ')
+  %li{ :class => "#{all}" }
+    все
+  - Portfolio.all.each do |portfolio|
+    %li{ :'data-id' => 'portfolio' + portfolio.id.to_s }
+      = portfolio.name
+    
+
+#sites.hidden
   - @sites.each do |site|
-    .site_box
+    .site_box{ :'data-id' => site.portfolios.collect{ |p| 'portfolio' + p.id.to_s }.join(' ') }
       .site_thumb
         = image_tag site.image.url(:thumb), :alt => site.name
-      = link_to site.name, site_path(site), :class => 'site_name ' + site.portfolios.collect{ |p| 'portfolio' + p.id.to_s }.join(' ')
+      = link_to site.name, site_path(site), :class => 'site_name'
