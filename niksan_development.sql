@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Сен 13 2011 г., 15:50
+-- Время создания: Сен 14 2011 г., 10:56
 -- Версия сервера: 5.1.54
 -- Версия PHP: 5.3.5-1ubuntu7.2
 
@@ -185,12 +185,18 @@ CREATE TABLE IF NOT EXISTS `portfolio_sites` (
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `index_portfolio_sites_on_portfolio_id_and_site_id` (`portfolio_id`,`site_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Дамп данных таблицы `portfolio_sites`
 --
 
+INSERT INTO `portfolio_sites` (`id`, `portfolio_id`, `site_id`, `created_at`, `updated_at`) VALUES
+(1, 1, 3, '2011-09-14 05:51:43', '2011-09-14 05:51:43'),
+(2, 1, 2, '2011-09-14 05:51:49', '2011-09-14 05:51:49'),
+(3, 1, 1, '2011-09-14 05:51:53', '2011-09-14 05:51:53'),
+(4, 2, 1, '2011-09-14 05:51:58', '2011-09-14 05:51:58'),
+(5, 1, 4, '2011-09-14 05:52:03', '2011-09-14 05:52:03');
 
 -- --------------------------------------------------------
 
