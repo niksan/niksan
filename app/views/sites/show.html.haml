@@ -3,10 +3,10 @@
   &rarr;
   = @site.name
 = image_tag @site.image.url(:small), :align => :left, :class => 'small_site_img'
-= raw(@site.description)
+!= @site.description
 %p
   Поставленная задача:
-  = raw(@site.task)
+  != @site.task
 %p
   Что сделано:
   = raw(@site.solution)
