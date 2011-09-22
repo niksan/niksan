@@ -6,7 +6,7 @@
       .post
         = link_to post.title, blog_post_path(post.blog, post)
         %p<
-          = post.short
+          != post.short
         %span.date<
           = l post.date, :format => :short_date
 .clear
