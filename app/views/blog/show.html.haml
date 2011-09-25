@@ -1,10 +1,10 @@
 %h1
   = link_to 'Блог', blog_index_path
   &rarr;
-  = @blog.name
+  != @blog.name
 #posts
   - @posts.each do |post|
     .post
       %h3
         = link_to post.title, blog_post_path(@blog, post)
-      = raw(post.short)
+      != post.short

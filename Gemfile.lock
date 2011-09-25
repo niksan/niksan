@@ -1,9 +1,8 @@
 GIT
   remote: https://github.com/chriseppstein/compass.git
-  revision: 22e2458b77519e8eb8463170c1a1fe4bab105f3e
-  branch: rails31
+  revision: d03d52990968db144483bcccea4dece826f06e3e
   specs:
-    compass (0.12.0.alpha.0.22e2458)
+    compass (0.12.alpha.0.d03d529)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
@@ -49,7 +48,7 @@ GEM
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.1.0)
-    chunky_png (1.2.1)
+    chunky_png (1.2.4)
     cocaine (0.2.0)
     coffee-rails (3.1.0)
       coffee-script (>= 2.2.0)

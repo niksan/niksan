@@ -1,5 +1,5 @@
 %h1
-  = @post.title
+  != @post.title
 .select_blog_part
   = link_to 'Блог', blog_index_path
   &rarr;
@@ -7,5 +7,5 @@
 %p
   %span.date
     = l @post.date, :format => :short_date
-= raw(@post.body)
+!= @post.body
 = render :partial =>'shared/tags', :locals => { :tags => @post.tags }

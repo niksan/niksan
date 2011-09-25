@@ -1,7 +1,7 @@
 %h1
   = link_to 'Портфолио', sites_path
   &rarr;
-  = @site.name
+  != @site.name
 = image_tag @site.image.url(:small), :align => :left, :class => 'small_site_img'
 != @site.description
 %p
@@ -9,10 +9,10 @@
   != @site.task
 %p
   Что сделано:
-  = raw(@site.solution)
+  != @site.solution
 %p
   Используемые технологии
-  = @site.technologies.collect{ |t| t.name }.join(', ')
+  != @site.technologies.collect{ |t| t.name }.join(', ')
 %p
   Адрес сайта: 
   = link_to @site.url, @site.url, :target => '_blank'

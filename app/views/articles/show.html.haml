@@ -1,4 +1,4 @@
 %h1<
-  = @article.title
-= raw(@article.body)
+  != @article.title
+!= @article.body
 = render :partial =>'shared/tags', :locals => { :tags => @article.tags }
