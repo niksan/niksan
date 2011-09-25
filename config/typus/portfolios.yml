@@ -1,8 +1,0 @@
-# Use the README file as a reference to customize settings.
-
-Portfolio:
-  fields:
-    default: name, description, image_file_name, image_file_size
-    form: name, description, image_file_name, image_file_size
-  relationships: portfolio_sites, sites
-  application: Application

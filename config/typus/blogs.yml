@@ -1,8 +1,0 @@
-# Use the README file as a reference to customize settings.
-
-Blog:
-  fields:
-    default: name
-    form: name
-  relationships: posts
-  application: Application

@@ -1,8 +1,0 @@
-# Use the README file as a reference to customize settings.
-
-Site:
-  fields:
-    default: name, description, url, image, date, task, solution
-    form: name, description, url, image, date, task, solution
-  relationships: site_technologies, technologies, portfolio_sites, portfolios
-  application: Application

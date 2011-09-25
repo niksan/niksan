@@ -1,8 +1,0 @@
-# Use the README file as a reference to customize settings.
-
-Message:
-  fields:
-    default: theme, name, email, phone, body
-    form: theme, name, email, phone, body
-  relationships: 
-  application: Application

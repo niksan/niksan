@@ -1,8 +1,0 @@
-# Use the README file as a reference to customize settings.
-
-Tag:
-  fields:
-    default: name, link_tags_count
-    form: name, link_tags_count
-  relationships: posts, link_tags, articles
-  application: Application
