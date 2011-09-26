@@ -3,15 +3,15 @@
     .wrapper
       .button
         = image_tag 'site_create.png', :alt => 'Разработка сайта'
-        = link_to 'Создание сайтов', article_path(2)
+        = link_to 'Создание сайтов', :controller => 'articles', :action => :show, :id => Article.find(2)
     .wrapper
       .button
         = image_tag 'site_pr.png', :alt => 'Раскрутка сайта'
-        = link_to 'Раскрутка сайтов', article_path(3)
+        = link_to 'Раскрутка сайтов', :controller => 'articles', :action => :show, :id => Article.find(3)
     .wrapper
       .button
         = image_tag 'site_support.png', :alt => 'Поддержка сайта'
-        = link_to 'Поддержка сайтов', article_path(4)
+        = link_to 'Поддержка сайтов', :controller => 'articles', :action => :show, :id => Article.find(4)
   .clear
 .box2
   %h1<
