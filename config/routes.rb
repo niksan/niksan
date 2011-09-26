@@ -6,6 +6,7 @@ Niksan2::Application.routes.draw do
 
   root :to => 'main#index'
   resources :main, :articles, :sites, :contacts, :portfolio
+  # match '/articles/:id-:permalink' => 'articles#show'
 
   resources :blog do
     resources :posts
