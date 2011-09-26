@@ -4,9 +4,16 @@ class Article < ActiveRecord::Base
 
   validates :title, :presence => true
 
+  before_create :set_permalink
   
   def to_param
-    "#{id}-#{title}"
+    "#{id}-#{permalink}"
   end
+
+  private
+    
+    def set_permalink
+      self.permalink = Russian.translit(self.title).mb_chars.downcase.gsub(/[^0-9а-яa-z]+/, ' ').strip.gsub(' ', '-').to_s
+    end
 
 end
