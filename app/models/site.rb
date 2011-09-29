@@ -9,7 +9,7 @@ class Site < ActiveRecord::Base
   
   has_attached_file :image, :styles => { :medium => "800x600>", :small => "280x300>", :thumb => "170x400>" }
 
-  permalink :title, :to_param => %w(id permalink)
+  permalink :name, :to_param => %w(id permalink)
 
 =begin
   before_save :set_permalink

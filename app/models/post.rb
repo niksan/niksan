@@ -8,4 +8,17 @@ class Post < ActiveRecord::Base
   validates :date, :presence => true
   validates :short, :presence => true
   validates :body, :presence => true
+
+
+  before_save :set_permalink
+  
+  def to_param
+    "#{id}-#{permalink}"
+  end
+
+  private
+    
+    def set_permalink
+      self.permalink = Russian.translit(self.title).mb_chars.downcase.gsub(/[^0-9а-яa-z]+/, ' ').strip.gsub(' ', '-').to_s
+    end
 end

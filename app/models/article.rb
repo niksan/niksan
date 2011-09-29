@@ -7,9 +7,6 @@ class Article < ActiveRecord::Base
   permalink :title, :to_param => %w(id permalink)
 
 =begin
-  def to_param
-    "#{id}-#{permalink}"
-  end
   before_create :set_permalink
   
   def to_param
