@@ -4,7 +4,7 @@
   - @posts.each do |post|
     .post
       %h3
-        = link_to post.blog.name, blog_path(post.blog)
+        = link_to post.blog.name, post.blog
         &rarr;
-        = link_to post.title, blog_post_path(post.blog, post)
+        = link_to post.title, post
       != post.short

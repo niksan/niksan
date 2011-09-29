@@ -3,7 +3,7 @@
 .select_blog_part
   = link_to 'Блог', blog_index_path
   &rarr;
-  = link_to @post.blog.name, blog_path(@post.blog)
+  = link_to @post.blog.name, @post.blog
 %p
   %span.date
     = l @post.date, :format => :short_date

@@ -4,7 +4,7 @@
   #last_in_blog
     - @last_posts.each do |post|
       .post
-        = link_to post.title, blog_post_path(post.blog, post)
+        = link_to post.title, post
         %p<
           != post.short
         %span.date<
