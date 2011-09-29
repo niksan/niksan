@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Сен 26 2011 г., 16:00
+-- Время создания: Сен 29 2011 г., 12:59
 -- Версия сервера: 5.1.54
 -- Версия PHP: 5.3.5-1ubuntu7.2
 
@@ -117,6 +117,7 @@ CREATE TABLE IF NOT EXISTS `blogs` (
   `name` varchar(255) DEFAULT NULL,
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
+  `permalink` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
@@ -124,8 +125,8 @@ CREATE TABLE IF NOT EXISTS `blogs` (
 -- Дамп данных таблицы `blogs`
 --
 
-INSERT INTO `blogs` (`id`, `name`, `created_at`, `updated_at`) VALUES
-(1, 'Сайт NikSan', '2011-09-12 09:01:53', '2011-09-12 10:42:01');
+INSERT INTO `blogs` (`id`, `name`, `created_at`, `updated_at`, `permalink`) VALUES
+(1, 'Сайт NikSan ', '2011-09-12 09:01:53', '2011-09-29 08:46:50', 'sayt-niksan');
 
 -- --------------------------------------------------------
 
@@ -273,6 +274,7 @@ CREATE TABLE IF NOT EXISTS `posts` (
   `updated_at` datetime DEFAULT NULL,
   `date` datetime DEFAULT NULL,
   `blog_id` int(11) DEFAULT NULL,
+  `permalink` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
@@ -280,8 +282,8 @@ CREATE TABLE IF NOT EXISTS `posts` (
 -- Дамп данных таблицы `posts`
 --
 
-INSERT INTO `posts` (`id`, `title`, `short`, `body`, `created_at`, `updated_at`, `date`, `blog_id`) VALUES
-(1, 'Новая версия сайта', 'Готова и опубликована новая версия сайта http://niksan.ru', 'Готова и опубликована новая версия сайта <a href=''http://niksan.ru''>http://niksan.ru</a>', '2011-09-12 10:07:55', '2011-09-13 11:19:45', '2011-08-25 20:00:00', 1);
+INSERT INTO `posts` (`id`, `title`, `short`, `body`, `created_at`, `updated_at`, `date`, `blog_id`, `permalink`) VALUES
+(1, 'Новая версия сайта ', 'Готова и опубликована новая версия сайта http://niksan.ru', 'Готова и опубликована новая версия сайта <a href=''http://niksan.ru''>http://niksan.ru</a>', '2011-09-12 10:07:55', '2011-09-29 08:39:16', '2011-08-25 20:00:00', 1, 'novaya-versiya-sayta');
 
 -- --------------------------------------------------------
 
@@ -323,7 +325,10 @@ INSERT INTO `schema_migrations` (`version`) VALUES
 ('20110925124621'),
 ('20110925164627'),
 ('20110925164628'),
-('20110926101927');
+('20110926101927'),
+('20110929074752'),
+('20110929083419'),
+('20110929083951');
 
 -- --------------------------------------------------------
 
@@ -345,6 +350,7 @@ CREATE TABLE IF NOT EXISTS `sites` (
   `date` datetime DEFAULT NULL,
   `task` text,
   `solution` text,
+  `permalink` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
@@ -352,11 +358,11 @@ CREATE TABLE IF NOT EXISTS `sites` (
 -- Дамп данных таблицы `sites`
 --
 
-INSERT INTO `sites` (`id`, `name`, `description`, `url`, `image_file_name`, `image_content_type`, `image_file_size`, `image_updated_at`, `created_at`, `updated_at`, `date`, `task`, `solution`) VALUES
-(1, 'Машиностроительный завод "Автолитмаш"', '', 'http://avtolitmash.ru', 'Screenshot.png', 'image/png', 1005923, '2011-08-19 20:36:20', '2011-08-11 20:07:07', '2011-09-26 11:57:30', '2011-08-19 19:00:00', '<a href=''/articles/2-sozdanie-saytov''>создание сайта</a>.', ' разработан индивидуальный дизайн, структура сайта.'),
-(2, 'Нефтегазовый кластер Воронежской области', '', 'http://ngkvo.ru', 'Screenshot.png', 'image/png', 366774, '2011-08-19 20:36:36', '2011-08-11 20:08:51', '2011-09-26 11:57:07', '2011-08-19 19:00:00', ' <a href=''/articles/2-sozdanie-saytov''>создание сайта</a>.', 'разработан индивидуальный дизайн, структура сайта.'),
-(3, 'Стелинвест', '', 'http://stelinvest.ru', 'Screenshot-2.png', 'image/png', 440809, '2011-08-19 20:36:47', '2011-08-11 20:14:16', '2011-09-26 11:56:27', '2011-08-19 19:00:00', '<a href=''/articles/2-sozdanie-saytov''>создание сайта</a>.', 'разработан индивидуальный дизайн, структура сайта, написаны специфичные для сферы деятельности компании модули CMS.'),
-(4, 'ОбоВсехАвто', '<p>Воронежский интернет-ресурс для поиска, покупки, продажи автомобилей. Крупнейшая в Черноземье торговая онлайн-площадка транспортных средств. Физические лица и организации могут выгодно предлагать и покупать транспортные средства на данном сайте.</p>', 'http://obovsehavto.ru', '2.jpg', 'image/jpeg', 102128, '2011-08-21 10:29:44', '2011-08-19 19:34:17', '2011-09-14 17:20:17', '2010-06-10 19:00:00', 'польностью переделать сайт, внедрить современный дизайн, изменить структуру, улучшить юзабилити.', 'ведутся работы.');
+INSERT INTO `sites` (`id`, `name`, `description`, `url`, `image_file_name`, `image_content_type`, `image_file_size`, `image_updated_at`, `created_at`, `updated_at`, `date`, `task`, `solution`, `permalink`) VALUES
+(1, 'Машиностроительный завод "Автолитмаш" ', '', 'http://avtolitmash.ru', 'Screenshot.png', 'image/png', 1005923, '2011-08-19 20:36:20', '2011-08-11 20:07:07', '2011-09-29 08:24:58', '2011-08-19 19:00:00', '<a href=''/articles/2-sozdanie-saytov''>создание сайта</a>.', ' разработан индивидуальный дизайн, структура сайта.', 'mashinostroitelnyy-zavod-avtolitmash'),
+(2, 'Нефтегазовый кластер Воронежской области ', '', 'http://ngkvo.ru', 'Screenshot.png', 'image/png', 366774, '2011-08-19 20:36:36', '2011-08-11 20:08:51', '2011-09-29 08:24:58', '2011-08-19 19:00:00', ' <a href=''/articles/2-sozdanie-saytov''>создание сайта</a>.', 'разработан индивидуальный дизайн, структура сайта.', 'neftegazovyy-klaster-voronezhskoy-oblasti'),
+(3, 'Стелинвест ', '', 'http://stelinvest.ru', 'Screenshot-2.png', 'image/png', 440809, '2011-08-19 20:36:47', '2011-08-11 20:14:16', '2011-09-29 08:24:58', '2011-08-19 19:00:00', '<a href=''/articles/2-sozdanie-saytov''>создание сайта</a>.', 'разработан индивидуальный дизайн, структура сайта, написаны специфичные для сферы деятельности компании модули CMS.', 'stelinvest'),
+(4, 'ОбоВсехАвто ', '<p>Воронежский интернет-ресурс для поиска, покупки, продажи автомобилей. Крупнейшая в Черноземье торговая онлайн-площадка транспортных средств. Физические лица и организации могут выгодно предлагать и покупать транспортные средства на данном сайте.</p>', 'http://obovsehavto.ru', '2.jpg', 'image/jpeg', 102128, '2011-08-21 10:29:44', '2011-08-19 19:34:17', '2011-09-29 08:24:59', '2010-06-10 19:00:00', 'польностью переделать сайт, внедрить современный дизайн, изменить структуру, улучшить юзабилити.', 'ведутся работы.', 'obovsehavto');
 
 -- --------------------------------------------------------
 
