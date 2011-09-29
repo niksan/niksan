@@ -6,6 +6,7 @@ gem 'mysql2'
 gem 'haml'
 gem 'paperclip'
 
+gem 'devise'
 gem 'activeadmin'
 gem "meta_search",    '>= 1.1.0.pre'
 

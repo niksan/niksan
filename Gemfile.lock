@@ -193,6 +193,7 @@ DEPENDENCIES
   capistrano
   coffee-rails (~> 3.1.0)
   compass!
+  devise
   execjs
   gritter_notices
   haml

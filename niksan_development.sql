@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Сен 29 2011 г., 12:59
+-- Время создания: Сен 29 2011 г., 14:02
 -- Версия сервера: 5.1.54
 -- Версия PHP: 5.3.5-1ubuntu7.2
 
@@ -76,7 +76,7 @@ CREATE TABLE IF NOT EXISTS `admin_users` (
 --
 
 INSERT INTO `admin_users` (`id`, `email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `created_at`, `updated_at`) VALUES
-(1, 'admin@example.com', '$2a$10$8IQ7Vv3HoZgGe5DB7B0Sme06k4m9FASBOJfoVmzJgbmO0Y.ZpFvqq', NULL, NULL, '2011-09-26 06:13:47', 1, '2011-09-26 06:13:47', '2011-09-26 06:13:47', '127.0.0.1', '127.0.0.1', '2011-09-26 06:10:05', '2011-09-26 06:13:47');
+(1, 'admin@example.com', '$2a$10$8IQ7Vv3HoZgGe5DB7B0Sme06k4m9FASBOJfoVmzJgbmO0Y.ZpFvqq', NULL, NULL, '2011-09-26 06:13:47', 2, '2011-09-29 09:49:28', '2011-09-26 06:13:47', '127.0.0.1', '127.0.0.1', '2011-09-26 06:10:05', '2011-09-29 09:49:28');
 
 -- --------------------------------------------------------
 
@@ -276,14 +276,15 @@ CREATE TABLE IF NOT EXISTS `posts` (
   `blog_id` int(11) DEFAULT NULL,
   `permalink` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Дамп данных таблицы `posts`
 --
 
 INSERT INTO `posts` (`id`, `title`, `short`, `body`, `created_at`, `updated_at`, `date`, `blog_id`, `permalink`) VALUES
-(1, 'Новая версия сайта ', 'Готова и опубликована новая версия сайта http://niksan.ru', 'Готова и опубликована новая версия сайта <a href=''http://niksan.ru''>http://niksan.ru</a>', '2011-09-12 10:07:55', '2011-09-29 08:39:16', '2011-08-25 20:00:00', 1, 'novaya-versiya-sayta');
+(1, 'Новая версия сайта ', 'Готова и опубликована новая версия сайта http://niksan.ru', 'Готова и опубликована новая версия сайта <a href=''http://niksan.ru''>http://niksan.ru</a>', '2011-09-12 10:07:55', '2011-09-29 08:39:16', '2011-08-25 20:00:00', 1, 'novaya-versiya-sayta'),
+(2, 'Первые доработки ', 'Сайт постепенно допиливается. Основные разделы готовы, осталось добавить побольше информации.', 'Наш сайт постепенно приобретает "человеческий" вид: произведены доработки в дизайне, структуре и программной части сайта. Но многое все еще предстоит сделать. Очень хочется по настоящему развить здесь раздел - "<a hreg=''/blog''>блог</a>". Из за поступления заказов работа над своим идет не так быстро, как хотелось бы.', '2011-09-29 09:54:51', '2011-09-29 10:00:49', '2011-09-29 09:55:00', 1, 'pervye-dorabotki');
 
 -- --------------------------------------------------------
 
