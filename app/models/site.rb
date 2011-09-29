@@ -8,4 +8,20 @@ class Site < ActiveRecord::Base
   validates :url, :presence => true
   
   has_attached_file :image, :styles => { :medium => "800x600>", :small => "280x300>", :thumb => "170x400>" }
+
+  permalink :title, :to_param => %w(id permalink)
+
+=begin
+  before_save :set_permalink
+  
+  def to_param
+    "#{id}-#{permalink}"
+  end
+
+  private
+    
+    def set_permalink
+      self.permalink = Russian.translit(self.name).mb_chars.downcase.gsub(/[^0-9а-яa-z]+/, ' ').strip.gsub(' ', '-').to_s
+    end
+=end
 end

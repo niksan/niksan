@@ -5,6 +5,6 @@
     - @new_sites.each do |site|
       %div.site
         = image_tag site.image.url(:small), :class => 'site_small2'
-        = link_to site.name, site_path(site)
+        = link_to site.name, site
     = link_to 'Перейти в портфолио ...', sites_path, :id => 'to_portfolio'
 .clear
