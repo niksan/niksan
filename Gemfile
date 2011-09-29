@@ -15,6 +15,7 @@ gem 'therubyracer'
 gem 'sass-rails', "  ~> 3.1.0"
 gem 'compass', :git => 'https://github.com/chriseppstein/compass.git'
 gem 'russian'
+gem 'permalink'
 
 gem 'coffee-rails', "~> 3.1.0"
 gem 'uglifier'

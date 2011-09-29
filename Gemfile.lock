@@ -125,6 +125,7 @@ GEM
       activesupport (>= 2.3.2)
       cocaine (>= 0.0.2)
       mime-types
+    permalink (1.1.2)
     polyamorous (0.5.0)
       activerecord (~> 3.0)
     polyglot (0.3.2)
@@ -199,6 +200,7 @@ DEPENDENCIES
   meta_search (>= 1.1.0.pre)
   mysql2
   paperclip
+  permalink
   rails (= 3.1.0)
   russian
   sass-rails (~> 3.1.0)
