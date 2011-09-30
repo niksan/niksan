@@ -1,0 +1,6 @@
+%h1
+  != 'Тэг - ' + @tag.name 
+%ul
+  - @link_tags.each do |link_tag|
+    %li
+      = link_to tagged_name(link_tag.tagged), link_tag.tagged
