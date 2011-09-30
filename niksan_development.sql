@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Сен 29 2011 г., 14:07
+-- Время создания: Сен 30 2011 г., 11:01
 -- Версия сервера: 5.1.54
 -- Версия PHP: 5.3.5-1ubuntu7.2
 
@@ -329,7 +329,8 @@ INSERT INTO `schema_migrations` (`version`) VALUES
 ('20110926101927'),
 ('20110929074752'),
 ('20110929083419'),
-('20110929083951');
+('20110929083951'),
+('20110930065215');
 
 -- --------------------------------------------------------
 
@@ -402,6 +403,7 @@ CREATE TABLE IF NOT EXISTS `tags` (
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
   `link_tags_count` int(11) DEFAULT NULL,
+  `permalink` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
@@ -409,10 +411,10 @@ CREATE TABLE IF NOT EXISTS `tags` (
 -- Дамп данных таблицы `tags`
 --
 
-INSERT INTO `tags` (`id`, `name`, `created_at`, `updated_at`, `link_tags_count`) VALUES
-(1, 'создание сайта', '2011-08-07 11:19:23', '2011-08-26 16:56:49', 3),
-(2, 'раскрутка сайта', '2011-08-07 11:19:31', '2011-08-24 11:24:05', 2),
-(3, 'поддержка сайта', '2011-08-07 11:19:39', '2011-08-07 11:20:49', 2);
+INSERT INTO `tags` (`id`, `name`, `created_at`, `updated_at`, `link_tags_count`, `permalink`) VALUES
+(1, 'создание сайта ', '2011-08-07 11:19:23', '2011-09-30 06:58:18', 3, 'sozdanie-sayta'),
+(2, 'раскрутка сайта ', '2011-08-07 11:19:31', '2011-09-30 06:58:19', 2, 'raskrutka-sayta'),
+(3, 'поддержка сайта ', '2011-08-07 11:19:39', '2011-09-30 06:58:19', 2, 'podderzhka-sayta');
 
 -- --------------------------------------------------------
 
