@@ -2,16 +2,16 @@
   #buttons_menu
     .wrapper
       .button
-        = image_tag 'site_create.png', :alt => 'Разработка сайта'
-        = link_to 'Создание сайтов', Article.find(2)
+        = image_tag 'site_create.png', :alt => 'Создание сайта'
+        = link_to 'Создание сайтов', article_permalink(2)
     .wrapper
       .button
         = image_tag 'site_pr.png', :alt => 'Раскрутка сайта'
-        = link_to 'Раскрутка сайтов', Article.find(3)
+        = link_to 'Раскрутка сайтов', article_permalink(3)
     .wrapper
       .button
         = image_tag 'site_support.png', :alt => 'Поддержка сайта'
-        = link_to 'Поддержка сайтов', Article.find(4)
+        = link_to 'Поддержка сайтов', article_permalink(4)
   .clear
 .box2
   %h1<
