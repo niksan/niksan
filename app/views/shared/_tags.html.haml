@@ -1,4 +1,3 @@
 #tags
   - tags.each do |tag|
-    %a.tag{ :href => '#' }
-      != tag.name
+    = link_to tag.name, tag, :class => 'tag'
