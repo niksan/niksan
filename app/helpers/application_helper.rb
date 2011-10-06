@@ -1,7 +1,7 @@
 module ApplicationHelper
 
   def title
-    
+    @title = 'NikSan - cоздание, раскрутка сайтов в Воронеже.'
   end
 
   def article_permalink(article)
