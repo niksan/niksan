@@ -4,6 +4,7 @@
   = link_to 'Блог', blog_index_path
   &rarr;
   = link_to @post.blog.name, @post.blog
+= rss_button
 %p
   %span.date
     = l @post.date, :format => :short_date

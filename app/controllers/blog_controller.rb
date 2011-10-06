@@ -2,6 +2,10 @@ class BlogController < ApplicationController
 
   def index
     @posts = Post.includes(:blog, :tags).order('date DESC')
+    respond_to do |format|
+      format.html
+      format.rss { render :layout => false } #index.rss.builder
+    end
   end
 
   def show

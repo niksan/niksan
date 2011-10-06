@@ -1,31 +1,32 @@
 !!!
 %html
-	%head
-		%title
-			= @title
-		%link{ :rel => 'shortcut icon', :href => '/favicon.ico', :type => 'image/x-icon' }
-		= stylesheet_link_tag 'application', :media => 'screen, projection'
-		= stylesheet_link_tag 'main', :media => 'screen, projection' if controller_name == 'main'
-		= stylesheet_link_tag 'portfolio', :media => 'screen, projection' if controller_name == 'portfolio' || controller_name ==  'sites'
-		= stylesheet_link_tag 'blog', :media => 'screen, projection' if controller_name == 'blog' || controller_name ==  'posts'
-		= javascript_include_tag 'application'
-		= javascript_include_tag 'main' if controller_name == 'main'
-		= csrf_meta_tag
-	%body
-		= gflash
-		= gritter_flash_messages
-		= render 'shared/header'
-		#wrapper
-			#content
-				- if controller_name == 'main'
-					= yield
-				- else
-					.box2
-						= yield
-						.clear
-			#sidebar
-				= render 'shared/sidebar/contacts'
-				= render 'shared/sidebar/new_sites'
-				= render 'shared/sidebar/last_in_blog'
-		.clear
-		= render 'shared/footer'
+    %head
+        %title
+            = @title
+        %link{ :rel => 'shortcut icon', :href => '/favicon.ico', :type => 'image/x-icon' }
+        = stylesheet_link_tag 'application', :media => 'screen, projection'
+        = stylesheet_link_tag 'main', :media => 'screen, projection' if controller_name == 'main'
+        = stylesheet_link_tag 'portfolio', :media => 'screen, projection' if controller_name == 'portfolio' || controller_name ==  'sites'
+        = stylesheet_link_tag 'blog', :media => 'screen, projection' if controller_name == 'blog' || controller_name ==  'posts'
+        = javascript_include_tag 'application'
+        = javascript_include_tag 'main' if controller_name == 'main'
+        = csrf_meta_tag
+        = auto_discovery_link_tag(:rss, {:controller => 'blog', :action => 'index', :format => :rss} )
+    %body
+        = gflash
+        = gritter_flash_messages
+        = render 'shared/header'
+        #wrapper
+            #content
+                - if controller_name == 'main'
+                    = yield
+                - else
+                    .box2
+                        = yield
+                        .clear
+            #sidebar
+                = render 'shared/sidebar/contacts'
+                = render 'shared/sidebar/new_sites'
+                = render 'shared/sidebar/last_in_blog'
+        .clear
+        = render 'shared/footer'

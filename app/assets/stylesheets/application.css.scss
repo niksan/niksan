@@ -93,6 +93,11 @@ strong{
     margin: 0px 0px 0px -360px;
     width: 100%;
     float: left;
+    #rss_bottle{
+      display:block;
+      float:right;
+      margin: -55px 20px 15px 0px;
+    }
     input[type=text]{
       behavior: stylesheet_url('PIE.htc');
     }

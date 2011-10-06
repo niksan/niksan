@@ -2,6 +2,7 @@
   = link_to 'Блог', blog_index_path
   &rarr;
   != @blog.name
+= rss_button
 #posts
   - @posts.each do |post|
     .post
