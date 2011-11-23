@@ -1,3 +1,4 @@
+# encoding: utf-8
 module TagsHelper
 
   def tagged_name(tagged)

@@ -1,3 +1,4 @@
+# encoding: utf-8
 class Technology < ActiveRecord::Base
   has_many :site_technologies, :dependent => :destroy
   has_many :sites, :through => :site_technologies

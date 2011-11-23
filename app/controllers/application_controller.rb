@@ -1,3 +1,4 @@
+# encoding: utf-8
 class ApplicationController < ActionController::Base
 
   before_filter :new_sites, :last_posts, :init_meta_tags

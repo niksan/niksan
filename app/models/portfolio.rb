@@ -1,3 +1,4 @@
+# encoding: utf-8
 class Portfolio < ActiveRecord::Base
   has_many :portfolio_sites, :dependent => :destroy
   has_many :sites, :through => :portfolio_sites

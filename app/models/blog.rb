@@ -1,3 +1,4 @@
+# encoding: utf-8
 class Blog < ActiveRecord::Base
 
   before_create :set_permalink

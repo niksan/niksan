@@ -1,3 +1,4 @@
+# encoding: utf-8
 class Tag < ActiveRecord::Base
 
   before_create :set_permalink
