@@ -1,3 +1,4 @@
+# encoding: utf-8
 class ContactsMailer < ActionMailer::Base
   default :from => "Сайт NIKSAN.RU <site@niksan.ru>"
 

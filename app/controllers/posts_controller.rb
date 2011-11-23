@@ -6,7 +6,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    redirect_to Post.find(params[:id].to_i), :status => 301 unless params[:id].grep(/[0-9]+-[a-z-]+/).size > 0
+    redirect_to Post.find(params[:id].to_i), :status => 301 unless params[:id].match(/[0-9]+-[a-z-]+/).size > 0
     @post = Post.includes(:tags).find(params[:id])
   end
 
