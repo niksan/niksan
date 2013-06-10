@@ -1,39 +1,30 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.3'
+gem 'rails', '3.2.13'
 
 gem 'mysql2'
 gem 'haml-rails'
 gem 'paperclip' # to remove
-
-gem 'ckeditor', "3.7.0.rc3"
-
+gem 'ckeditor'
 gem 'devise'
 gem 'activeadmin' #to_remove
-gem "meta_search",    '>= 1.1.0.pre' #to_remove
-
+gem 'meta_search',    '>= 1.1.0.pre' #to_remove
 gem 'gritter_notices'
-
 gem 'bootstrap-sass'
-gem 'sass-rails', "  ~> 3.2.3"
-gem 'coffee-rails', '~> 3.2.1'
+gem 'sass-rails'
+gem 'coffee-rails'
 gem 'compass-rails'
 gem 'russian'
 gem 'permalink'
-
-gem 'coffee-rails', "~> 3.1.0"
-gem 'uglifier', '>= 1.0.3'
-
+gem 'coffee-rails'
+gem 'uglifier'
 gem 'json'
 gem 'jquery-rails'
-
 gem 'unicorn'
 gem 'capistrano'
-
 gem 'execjs'
 gem 'therubyracer'
-
-gem 'yaml_db', git: 'git://github.com/lostapathy/yaml_db.git'
+gem 'yaml_db'
 
 group :development do
   gem 'rails-erd'
