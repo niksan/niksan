@@ -1,13 +1,12 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '3.2.14'
 
-gem 'mysql2'
+gem 'pg'
 gem 'haml-rails'
 gem 'paperclip' # to remove
 gem 'ckeditor'
 gem 'devise'
-gem 'activeadmin' #to_remove
 gem 'meta_search',    '>= 1.1.0.pre' #to_remove
 gem 'gritter_notices'
 gem 'bootstrap-sass'
