@@ -21,6 +21,11 @@ gem 'unicorn'
 gem 'capistrano'
 gem 'yaml_db'
 
+group :assets do
+  gem 'uglifier'
+  gem 'turbo-sprockets-rails3'
+end
+
 group :development do
   gem 'rails-erd'
   gem 'rnotify'
