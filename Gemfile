@@ -7,7 +7,6 @@ gem 'haml-rails'
 gem 'paperclip' # to remove
 gem 'ckeditor'
 gem 'devise'
-gem 'meta_search',    '>= 1.1.0.pre' #to_remove
 gem 'gritter_notices'
 gem 'bootstrap-sass'
 gem 'sass-rails'
@@ -21,8 +20,6 @@ gem 'json'
 gem 'jquery-rails'
 gem 'unicorn'
 gem 'capistrano'
-gem 'execjs'
-gem 'therubyracer'
 gem 'yaml_db'
 
 group :development do
