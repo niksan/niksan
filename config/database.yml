@@ -1,29 +1,23 @@
 development:
-  adapter: mysql2
-  encoding: utf8
-  reconnect: false
+  adapter: postgresql
+  encoding: unicode
   database: niksan_development
   pool: 5
-  username: root
-  password: 
-  socket: /var/run/mysqld/mysqld.sock
+  username: postgres
+  password: 860827
 
 test:
-  adapter: mysql2
-  encoding: utf8
-  reconnect: false
-  database: niksan2_test
+  adapter: postgresql
+  encoding: unicode
+  database: niksan_test
   pool: 5
-  username: root
-  password: 
-  socket: /var/run/mysqld/mysqld.sock
+  username: postgres
+  password: 860827
 
 production:
-  adapter: mysql2
-  encoding: utf8
-  reconnect: false
-  database: niksan_niksan83
+  adapter: postgresql
+  encoding: unicode
+  database: niksan_development
   pool: 5
-  username: niksan_niksan83
-  password: wRpkKV68
-  host: mysql0.locum.ru
+  username: niksan
+  password:

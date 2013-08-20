@@ -11,7 +11,9 @@ class Site < ActiveRecord::Base
   validates :name, :presence => true
   validates :url, :presence => true
 
-  has_attached_file :image, :styles => { :medium => "800x600>", :small => "280x300>", :thumb => "170x400>" }
+  path = ":rails_root/public/system/:attachment/:id/:style/:basename.:extension"
+  url = "/system/:attachment/:id/:style/:basename.:extension"
+  has_attached_file :image, :styles => { :medium => "800x600>", :small => "280x300>", :thumb => "170x400>" }, url: url, path: path
 
   permalink :name, :to_param => %w(id permalink)
 
