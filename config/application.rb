@@ -2,12 +2,12 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
-
 if defined?(Bundler)
-  Bundler.require *Rails.groups(:assets => %w(development test))
+  # If you precompile assets before deploying to production, use this line
+  Bundler.require(*Rails.groups(:assets => %w(development test)))
+  # If you want your assets lazily compiled in production, use this line
+  # Bundler.require(:default, :assets, Rails.env)
 end
-
-Haml::Template.options[:ugly] = false
 
 module Niksan2
   class Application < Rails::Application
@@ -16,7 +16,8 @@ module Niksan2
     # -- all .rb files in that directory are automatically loaded.
 
     # Custom directories with classes and modules you want to be autoloadable.
-    # config.autoload_paths += %W(#{config.root}/extras)
+    config.autoload_paths += %W(#{config.root}/lib)
+    config.autoload_paths += %W(#{config.root}/search_result)
 
     # Only load the plugins named here, in the order given (default is alphabetical).
     # :all can be used as a placeholder for all plugins not explicitly named.
@@ -33,17 +34,22 @@ module Niksan2
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :ru
 
-    # JavaScript files you want as :defaults (application.js is always included).
-    config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
+    # Configure sensitive parameters which will be filtered from the log file.
+    config.filter_parameters += [:password]
+
+    # Enable escaping HTML in JSON.
+    config.active_support.escape_html_entities_in_json = true
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 
-    # Configure sensitive parameters which will be filtered from the log file.
-    config.filter_parameters += [:password]
+    # parameters by using an attr_accessible or attr_protected declaration.
+    config.active_record.whitelist_attributes = true
 
+    # Enable the asset pipeline
     config.assets.enabled = true
 
-    #config.assets.precompile = [ /\w+\.(?!js|css).+/, "application.js", "application.css" ]
+    # Version of your assets, change this if you want to expire all your assets
+    config.assets.version = '1.0'
   end
 end
