@@ -5,7 +5,7 @@ ssh_options[:forward_agent] = true
 
 set :keep_releases, 3
 set :application,     'niksan'
-set :deploy_server,   "82.196.2.187"
+set :deploy_server,   "54.208.224.22"
 set :bundle_without,  [:development, :test]
 set :user,            "root"
 set :login,           "niksan"
@@ -17,9 +17,10 @@ set :bundle_dir,      File.join(fetch(:shared_path), 'gems')
 role :web,            deploy_server
 role :app,            deploy_server
 role :db,             deploy_server, primary: true
-set :rvm_ruby_string, '2.0.0-p247'
-set :rake,            "rvm use #{rvm_ruby_string} do bundle exec rake" 
-set :bundle_cmd,      "rvm use #{rvm_ruby_string} do bundle"
+set :rbenv_type, :user # or :system, depends on your rbenv setup
+set :rbenv_ruby, '2.0.0-p247'
+set :rake,            "bundle exec rake" 
+set :bundle_cmd,      "do bundle"
 set :scm,             :git
 set :repository,      'git://github.com/niksan/niksan.git'
 
@@ -44,7 +45,7 @@ task :set_links, roles => :app do
 end
 
 task :do_migrations, roles => :app do
-  run "cd #{deploy_to}/current; rvm use #{rvm_ruby_string} do bundle exec rake RAILS_ENV=production db:migrate"
+  run "cd #{deploy_to}/current; bundle exec rake RAILS_ENV=production db:migrate"
 end
 
 before 'deploy:finalize_update', 'set_current_release'
@@ -52,7 +53,7 @@ task :set_current_release, roles: :app do
     set :current_release, latest_release
 end
 
-  set :unicorn_start_cmd, "(cd #{deploy_to}/current; rvm use #{rvm_ruby_string} do bundle exec unicorn_rails -Dc #{unicorn_conf} -E production)"
+  set :unicorn_start_cmd, "(cd #{deploy_to}/current; bundle exec unicorn_rails -Dc #{unicorn_conf} -E production)"
 
 namespace :deploy do
   desc 'Start application'

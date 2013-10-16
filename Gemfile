@@ -19,7 +19,6 @@ gem 'json'
 gem 'jquery-rails'
 gem 'yaml_db'
 gem 'unicorn'
-gem 'capistrano'
 gem 'yaml_db'
 
 group :assets do
@@ -39,4 +38,5 @@ group :test do
 end
 
 gem 'unicorn'
-gem 'capistrano'
+gem 'capistrano', github: 'capistrano/capistrano'
+gem 'capistrano-rbenv', github: "capistrano/rbenv"
