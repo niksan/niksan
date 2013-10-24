@@ -8,7 +8,7 @@ set :application,     'niksan'
 set :deploy_server,   "82.196.2.187"
 set :bundle_without,  [:development, :test]
 set :user,            "root"
-set :login,           "root"
+set :login,           "niksan"
 set :use_sudo,        false
 set :deploy_to,       "/srv/htdocs/#{application}"
 set :unicorn_conf,    "#{deploy_to}/current/config/unicorn.rb"
