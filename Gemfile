@@ -27,14 +27,7 @@ group :assets do
 end
 
 group :development do
-  gem 'rails-erd'
-  gem 'rnotify'
   gem 'letter_opener'
-end
-
-group :test do
-  gem 'rspec'
-  gem 'cucumber'
 end
 
 gem 'unicorn'
