@@ -38,5 +38,4 @@ group :test do
 end
 
 gem 'unicorn'
-gem 'capistrano', github: 'capistrano/capistrano'
-gem 'capistrano-rbenv', github: "capistrano/rbenv"
+gem 'capistrano', '2.15.5'
