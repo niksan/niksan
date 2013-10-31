@@ -21,7 +21,7 @@ set :rvm_ruby_string, '2.0.0-p247@rails32'
 set :rake,            "rvm use #{rvm_ruby_string} do bundle exec rake" 
 set :bundle_cmd,      "rvm use #{rvm_ruby_string} do bundle"
 set :scm,             :git
-set :repository,      'git://github.com/niksan/edem-design.git'
+set :repository,      'git://github.com/niksan/niksan.git'
 
 before 'deploy:assets:precompile', :remove_paths, :set_links
 after 'deploy:update_code', :do_migrations
@@ -44,7 +44,7 @@ task :set_links, roles => :app do
 end
 
 task :do_migrations, roles => :app do
-  run "cd #{deploy_to}/current; rvm use #{rvm_ruby_string} do bundle exec rake RAILS_ENV=production db:migrate"
+  #run "cd #{deploy_to}/current; rvm use #{rvm_ruby_string} do bundle exec rake RAILS_ENV=production db:migrate"
 end
 
 before 'deploy:finalize_update', 'set_current_release'
