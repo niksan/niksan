@@ -44,7 +44,7 @@ task :set_links, roles => :app do
 end
 
 task :do_migrations, roles => :app do
-  #run "cd #{deploy_to}/current; rvm use #{rvm_ruby_string} do bundle exec rake RAILS_ENV=production db:migrate"
+  run "cd #{deploy_to}/current; rvm use #{rvm_ruby_string} do bundle exec rake RAILS_ENV=production db:migrate"
 end
 
 before 'deploy:finalize_update', 'set_current_release'
