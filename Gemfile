@@ -14,21 +14,20 @@ gem 'coffee-rails'
 gem 'compass-rails'
 gem 'russian'
 gem 'permalink'
-gem 'uglifier'
 gem 'json'
 gem 'jquery-rails'
-gem 'yaml_db'
 gem 'unicorn'
 gem 'yaml_db'
-
+gem 'whenever'
 group :assets do
   gem 'uglifier'
   gem 'turbo-sprockets-rails3'
 end
 
+gem 'unicorn'
+gem 'resque', :require => "resque/server"
 group :development do
+  gem "capistrano"
+  gem "rvm-capistrano"
   gem 'letter_opener'
 end
-
-gem 'unicorn'
-gem 'capistrano', '2.15.5'
