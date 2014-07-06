@@ -16,7 +16,6 @@ gem 'russian'
 gem 'permalink'
 gem 'json'
 gem 'jquery-rails'
-gem 'unicorn'
 gem 'yaml_db'
 gem 'whenever'
 group :assets do
