@@ -18,6 +18,8 @@ gem 'json'
 gem 'jquery-rails'
 gem 'yaml_db'
 gem 'whenever'
+
+gem 'therubyracer', platforms: :ruby
 group :assets do
   gem 'uglifier'
   gem 'turbo-sprockets-rails3'
